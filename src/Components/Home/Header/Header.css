@@ -1,0 +1,16 @@
+.logged-btn{ 
+    height: 32px;
+    width: 90px;
+    background: rgb(23, 22, 51);
+    color: green ;
+    font-size: 13px;
+    font-weight: 500;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid green;
+    transition: 2s;
+}
+.logged-btn:hover{
+    background-color: green;
+    color: white;
+}

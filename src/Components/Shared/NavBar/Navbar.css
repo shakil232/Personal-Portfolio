@@ -1,0 +1,18 @@
+.nav-head{
+    font-weight:700;
+    color: rgb(218, 22, 201);
+   
+}
+.nav-menu{
+    font-size: 13px;
+    font-weight: 600;
+    color: #3A4256 ;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 2s;
+}
+.nav-menu:hover{
+    
+    text-decoration: overline;   
+}
+
