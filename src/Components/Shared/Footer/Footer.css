@@ -2,3 +2,12 @@
     background-color: rgb(23, 22, 51);
     height: 150px;
 }
+.git-link{
+    color: rgb(13, 194, 67);
+    font-size: 15px;
+    text-decoration: none;
+    transition: 2s;
+}
+.git-link:hover{
+    color:rgb(23, 199, 184) ;
+}

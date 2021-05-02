@@ -1,21 +1,24 @@
 
 .header-text small {
     color: #5EF1CF;
+    font-size: 14px;
 }
 .header-text h3 {
     color: white;
 }
 .header-list li{
     color:#5EF1CF ;
-    font-size: 12px;
+    font-size: 14px;
 }
-
+.header-about{
+    font-size: 13px;
+}
 .resume-btn{ 
     height: 32px;
     width: 90px;
     background: rgb(23, 22, 51);
     color: green ;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     outline: none;
     border-radius: 5px;
@@ -31,7 +34,7 @@
     width: 90px;
     background: green;
     color: white ;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     outline: none;
     border-radius: 5px;
@@ -41,4 +44,15 @@
 .about-btn:hover{
     background-color: rgb(108, 228, 108);
     
+}
+.social-icon{
+    margin-right: 20px;
+    font-size: 25px;
+    color: #0db8ec ;
+    transition: 2s;
+    cursor: pointer;
+}
+.social-icon:hover{
+    color:#d82f97 ;
+    font-size: 20px;
 }
