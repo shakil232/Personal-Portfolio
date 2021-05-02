@@ -5,11 +5,11 @@ import { Nav, Navbar } from 'react-bootstrap';
 
 const NavBar = () => {
     return (
-        <Navbar className="mt-2" expand="lg">
+        <Navbar className="mt-2 nav-list mb-5" expand="lg">
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ml-auto ms-auto nav-list">
+            <Nav className="ml-auto ms-auto ">
                 <a className="mr-5  nav-menu" to="">Home</a>
                 <a className="mr-5 nav-menu" to="">About</a>
                 <a className="mr-5 nav-menu" to="">Works</a>

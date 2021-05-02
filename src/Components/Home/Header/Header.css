@@ -1,4 +1,16 @@
-.logged-btn{ 
+
+.header-text small {
+    color: #5EF1CF;
+}
+.header-text h3 {
+    color: white;
+}
+.header-list li{
+    color:#5EF1CF ;
+    font-size: 12px;
+}
+
+.resume-btn{ 
     height: 32px;
     width: 90px;
     background: rgb(23, 22, 51);
@@ -10,7 +22,23 @@
     border: 2px solid green;
     transition: 2s;
 }
-.logged-btn:hover{
+.resume-btn:hover{
     background-color: green;
     color: white;
+}
+.about-btn{ 
+    height: 32px;
+    width: 90px;
+    background: green;
+    color: white ;
+    font-size: 13px;
+    font-weight: 500;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid green;
+    transition: 2s;
+}
+.about-btn:hover{
+    background-color: rgb(108, 228, 108);
+    
 }
