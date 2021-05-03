@@ -1,6 +1,7 @@
 import React from 'react';
 import './Project.css'
 import Route from '../../../images/Reactp.png'
+import { Link } from 'react-router-dom';
 
 const Project = () => {
 
@@ -112,8 +113,11 @@ const Project = () => {
 
             </div>
             <div className="action text-center">
-                <a className="details-link" href="">
+                <Link className="details-link" to="/works"> 
                     <button type="button" className="work-btn">All Works</button>
+                </Link>
+                <a href="">
+
                 </a>
 
             </div>

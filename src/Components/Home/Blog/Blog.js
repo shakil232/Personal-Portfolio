@@ -4,6 +4,7 @@ import REACT from '../../../images/Reactp.png'
 import Route from '../../../images/reuter.png'
 import javaScript from '../../../images/js.png'
 import { Button, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
     return (
@@ -76,9 +77,9 @@ const Blog = () => {
                 </div>
             </div>
             <div className="action text-center">
-                <a className="details-link" href="">
+                <Link className="details-link" to="/blog">
                     <button type="button" className="blog-btn">All Article</button>
-                </a>
+                </Link>
 
             </div>
         </section>

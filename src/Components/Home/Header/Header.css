@@ -6,10 +6,6 @@
 .header-text h3 {
     color: white;
 }
-.header-list li{
-    color:#5EF1CF ;
-    font-size: 14px;
-}
 .header-about{
     font-size: 13px;
 }
@@ -56,3 +52,15 @@
     color:#d82f97 ;
     font-size: 20px;
 }
+
+
+.typeWrite{
+    color: #5EF1CF;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 35px;
+    font-family: monospace;
+}
+  
+  
+  

@@ -1,0 +1,28 @@
+.about-background{
+    background-color: rgb(23, 22, 51);
+    height: 100%;
+  }
+  .profile-img{
+    width: 60%;
+  }
+  .head-text{
+    color: rgb(17, 218, 233);
+    
+  }
+
+  .page-title:after {
+    content: "";
+    width: 74px;
+    height: 2px;
+    display: block;
+    margin-top: 7px;
+    background-color: #64ffda;
+}
+.technology {
+  display: flex;
+  flex-wrap: wrap;
+}
+.technology span{
+  color: white;
+  font-size: 11px;
+}

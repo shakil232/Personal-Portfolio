@@ -1,12 +1,12 @@
 import React from 'react';
-import './Footer.css';
+import './FooterDifferent.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faFacebookSquare, faGithub } from '@fortawesome/free-brands-svg-icons'
 
-const Footer = () => {
+const FooterDifferent = () => {
     return (
-        <div className="mt-5 pt-5 footer text-center">
+        <div className="mt-2 pt-2 pb-3 text-center">
             <small className="text-white"> All Copyright <small>&copy;</small> 2021 | <a className="git-link" target="_blank" href="https://github.com/shakil232"> Mohammad Shakil Ahmed</a> </small>
             <br />
             <small className="text-white">Dhaka,Bangladesh</small>
@@ -24,4 +24,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default FooterDifferent;

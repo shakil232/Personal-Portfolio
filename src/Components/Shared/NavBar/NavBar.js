@@ -1,7 +1,8 @@
 import React from 'react';
 import './Navbar.css';
 import { Nav, Navbar } from 'react-bootstrap';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+
 
 const NavBar = () => {
     return (
@@ -10,12 +11,12 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto ms-auto ">
-                <a className="mr-5  nav-menu" to="">Home</a>
-                <a className="mr-5 nav-menu" to="">About</a>
-                <a className="mr-5 nav-menu" to="">Works</a>
-                <a className="mr-5  nav-menu" to="">Blog</a>
-                <a className="mr-5 nav-menu" to="">Contact</a>
-
+                <Link className="mr-5  nav-menu" to="/home" >Home</Link>
+                <Link className="mr-5 nav-menu" to="/about" >About</Link>
+                <Link className="mr-5  nav-menu" to="/works" >Works</Link>
+                <Link className="mr-5  nav-menu" to="/blog" >Blog</Link>
+                <Link className="mr-5  nav-menu" to="/contact" >Contact</Link>
+                
             </Nav>
             
         </Navbar.Collapse>
