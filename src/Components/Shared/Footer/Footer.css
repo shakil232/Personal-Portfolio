@@ -1,6 +1,6 @@
 .footer{
     background-color: rgb(23, 22, 51);
-    height: 150px;
+    height: 120px;
 }
 .git-link{
     color: rgb(13, 194, 67);
@@ -27,12 +27,11 @@
 }
 .social-A-icon{
     margin-right: 20px;
-    font-size: 20px;
     color: #d82f97 ;
-    transition: 2s;
+    transition: transform(2s);
     cursor: pointer;
 }
 .social-A-icon:hover{
     color:#0db8ec ;
-    font-size: 20px;
+    transform: scale(2);
 }

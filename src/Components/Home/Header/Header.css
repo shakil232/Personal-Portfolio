@@ -1,13 +1,13 @@
 
 .header-text small {
     color: #5EF1CF;
-    font-size: 14px;
+    font-size: 18px;
 }
 .header-text h3 {
     color: white;
 }
 .header-about{
-    font-size: 13px;
+    font-size: 14px;
 }
 .resume-btn{ 
     height: 32px;
@@ -43,20 +43,19 @@
 }
 .social-icon{
     margin-right: 20px;
-    font-size: 25px;
     color: #0db8ec ;
-    transition: 2s;
+    transition:2s;
     cursor: pointer;
 }
 .social-icon:hover{
     color:#d82f97 ;
-    font-size: 20px;
+    transform: scale(3);
 }
 
 
 .typeWrite{
     color: #5EF1CF;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 500;
     line-height: 35px;
     font-family: monospace;

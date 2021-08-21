@@ -102,6 +102,17 @@
     border: 2px solid green;
     
 }
+.project-icon{
+    margin-right: 20px;
+    font-size: 20px;
+    color:#0db8ec ;
+    transition: 2s;
+    cursor: pointer;
+}
+.project-icon:hover{
+    color:green ;
+    font-size: 20px;
+}
 
 
 

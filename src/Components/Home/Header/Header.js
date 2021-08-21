@@ -50,7 +50,7 @@ const Header = () => {
                         <Link to="/about">
                             <button className=" about-btn"> About Me</button>
                         </Link>
-                        <a target="_blank" href="https://drive.google.com/file/d/1tG332TpwBVRd6T1RYymNMAirX9ASGW1x/view?usp=sharing"><button className="ml-3 resume-btn">Resume</button></a>
+                        <a target="_blank" href="https://drive.google.com/file/d/1myQiS0Xo1pV14dQfvMYHK7nEhrs5Xe0D/view?usp=sharing"><button className="ml-3 resume-btn">Resume</button></a>
 
                     </div>
                 </div>

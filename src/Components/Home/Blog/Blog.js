@@ -3,12 +3,12 @@ import './Blog.css';
 import REACT from '../../../images/Reactp.png'
 import Route from '../../../images/reuter.png'
 import javaScript from '../../../images/js.png'
-import { Button, Card } from 'react-bootstrap';
+import { Button, Card, CardDeck } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Blog = () => {
     return (
-        <section className="container  mt-5 pt-5">
+        <section className="container  mt-4 pt-4">
             <div className="row d-flex mb-5">
                 <div className="col-md-7">
                     <div className="section-title ">
@@ -21,67 +21,80 @@ const Blog = () => {
                 </div>
             </div>
             <div className="container d-flex justify-content-center m">
+
                 <div className="row">
-                    <Card className="mb-5 mr-3 border-0 card-border" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={Route} />
-                        <Card.Body className="blog-body">
-                            <Card.Title className=" text-white">React Route</Card.Title>
-                            <Card.Text>
-                                <small className="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum blanditiis reiciendis fugiat. Magnam, ipsum?</small>
-                            </Card.Text>
-                            <div className="d-flex justify-content-between blog-bottom text-white">
-                                <div>
-                                    <span>React.js</span>
-                                    <span>React Route</span>
+                    <CardDeck>
+                        <Card className="border-0 card-border mt-3" >
+                            <Card.Img className="img-fluid" variant="top" src={REACT} />
+                            <Card.Body className="blog-body">
+                                <Card.Title className=" text-white">MongoDB</Card.Title>
+                                <Card.Text>
+                                    <small className="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum blanditiis reiciendis fugiat. Magnam, ipsum?</small>
+                                </Card.Text>
+                                <div className="d-flex justify-content-between blog-bottom text-white ">
+                                    <div className="technology mt-2">
+                                        <span>MongoDB</span>
+
+                                    </div>
+                                    <div className="mt-2">
+                                        <small>April 25 2021</small>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span>April 10 2021</span>
+                            </Card.Body>
+
+                        </Card>
+
+                        <Card className="border-0 card-border mt-3">
+                            <Card.Img className="img-fluid" variant="top" src={javaScript} />
+                            <Card.Body className="blog-body">
+                                <Card.Title className=" text-white">JavaScript</Card.Title>
+                                <Card.Text>
+                                    <small className="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum blanditiis reiciendis fugiat. Magnam, ipsum?</small>
+                                </Card.Text>
+                                <div className="d-flex justify-content-between text-white blog-bottom">
+                                    <div className="technology mt-2">
+                                        <span>JavaScript</span>
+
+                                    </div>
+                                    <div className="mt-2">
+                                        <small>April 04 2021</small>
+                                    </div>
                                 </div>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                    <Card className="mb-5 mr-3 border-0 card-border" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={REACT} />
-                        <Card.Body className="blog-body">
-                            <Card.Title className=" text-white">REACT</Card.Title>
-                            <Card.Text>
-                                <small className="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum blanditiis reiciendis fugiat. Magnam, ipsum?</small>
-                            </Card.Text>
-                            <div className="d-flex justify-content-between blog-bottom text-white">
-                                <div>
-                                    <span>React.js</span>
+                            </Card.Body>
+
+                        </Card>
+
+                        <Card className="border-0 card-border mt-3">
+                            <Card.Img className="img-fluid" variant="top" src={Route} />
+                            <Card.Body className="blog-body">
+                                <Card.Title className=" text-white">React-Router</Card.Title>
+                                <Card.Text>
+                                    <small className="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum blanditiis reiciendis fugiat. Magnam, ipsum?</small>
+                                </Card.Text>
+                                <div className="d-flex justify-content-between text-white blog-bottom">
+                                    <div className="technology mt-2">
+                                        <span>React-Router</span>
+
+                                    </div>
+                                    <div className="mt-2">
+                                        <small>April 29 2021</small>
+                                    </div>
                                 </div>
-                                <div>
-                                    <span>Feb 2 2021</span>
-                                </div>
-                            </div>
-                        </Card.Body>
-                    </Card>
-                    <Card className="mb-5 border-0 card-border" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src={javaScript} />
-                        <Card.Body className="blog-body">
-                            <Card.Title className=" text-white">javaScript</Card.Title>
-                            <Card.Text>
-                                <small className="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum blanditiis reiciendis fugiat. Magnam, ipsum?</small>
-                            </Card.Text>
-                            <div className="d-flex  justify-content-between blog-bottom text-white">
-                                <div>
-                                    <span>JavaScript</span>
-                                </div>
-                                <div>
-                                    <span>April 4 2021</span>
-                                </div>
-                            </div>
-                        </Card.Body>
-                    </Card>
+                            </Card.Body>
+
+                        </Card>
+                    </CardDeck> 
+
                 </div>
             </div>
+
             <div className="action text-center">
                 <Link className="details-link" to="/blog">
                     <button type="button" className="blog-btn">All Article</button>
                 </Link>
 
             </div>
+
         </section>
     );
 };

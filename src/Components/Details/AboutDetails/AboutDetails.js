@@ -33,7 +33,6 @@ const AboutDetails = () => {
                                     <span>Node.js</span>
                                     <span>Express.js</span>
                                     <span>MongoDB</span>
-                                    <span>Redux.js</span>
                                     <span>Firebase</span>
                                     <span>Bootstrap</span>
                                     <span>MAterial UI</span>
@@ -43,7 +42,6 @@ const AboutDetails = () => {
                                     <span>Netlify</span>
                                     <span>HeroKu</span>
                                     <span>React Spring</span>
-                                    <span>REST API</span>
                                     <span>VS Code</span>
                                     
                                 </div>
@@ -64,12 +62,8 @@ const AboutDetails = () => {
                                     I also Familiar
                                 </h4>
                                 <div className="technology d-flex">
-                                    <span>Next.js</span>
-                                    <span>React Native</span>
-                                    <span>TypeScript</span>
                                     <span>Stripe</span>
                                     <span>SSLCommerz</span>
-                                    <span>Rechart</span>
                                     <span>Google Map</span>  
                                 </div>
                             </div>

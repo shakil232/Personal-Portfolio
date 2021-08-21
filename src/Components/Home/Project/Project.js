@@ -2,6 +2,9 @@ import React from 'react';
 import './Project.css'
 import Route from '../../../images/Reactp.png'
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Project = () => {
 
@@ -40,10 +43,10 @@ const Project = () => {
                                 <span>Firebase</span>
                                 <span>Bootstrap4</span>
                             </div>
-                            <ul className="preview list-inline mt-4">
-                                <li className="list-inline-item ">git</li>
-                                <li className="list-inline-item">fb</li>
-                            </ul>
+                            <div className="mt-4 d-flex">
+                                <a className="project-icon" target="_blank" href="https://github.com/shakil232"><FontAwesomeIcon icon={faGithub} /></a>
+                                <a className="project-icon" target="_blank" href=""><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -71,10 +74,10 @@ const Project = () => {
                                 <span>Firebase</span>
                                 <span>Bootstrap4</span>
                             </div>
-                            <ul className="preview list-inline mt-4">
-                                <li className="list-inline-item ">git</li>
-                                <li className="list-inline-item">fb</li>
-                            </ul>
+                            <div className="mt-4 d-flex">
+                                <a className="project-icon" target="_blank" href="https://github.com/shakil232"><FontAwesomeIcon icon={faGithub} /></a>
+                                <a className="project-icon" target="_blank" href=""><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -103,23 +106,19 @@ const Project = () => {
                                 <span>Firebase</span>
                                 <span>Bootstrap4</span>
                             </div>
-                            <ul className="preview list-inline mt-4">
-                                <li className="list-inline-item ">git</li>
-                                <li className="list-inline-item">fb</li>
-                            </ul>
+                            <div className="mt-4 d-flex">
+                                <a className="project-icon" target="_blank" href="https://github.com/shakil232"><FontAwesomeIcon icon={faGithub} /></a>
+                                <a className="project-icon" target="_blank" href=""><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
             </div>
             <div className="action text-center">
-                <Link className="details-link" to="/works"> 
+                <Link className="details-link" to="/works">
                     <button type="button" className="work-btn">All Works</button>
                 </Link>
-                <a href="">
-
-                </a>
-
             </div>
         </section>
     );
