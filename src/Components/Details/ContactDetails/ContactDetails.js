@@ -9,7 +9,7 @@ const ContactDetails = () => {
    const sendMail = (e) =>{
         e.preventDefault();
 
-        emailjs.sendForm('service_3bqtkd4', 'personal_template', e.target, 'user_tbFNuorI3og0UJCyvUeAH')
+        emailjs.sendForm('service_th482ch', 'template_7heariy', e.target, "user_tbFNuorI3og0UJCyvUeAH")
             .then((result) => {
                 if(result){
                     alert("your Mail Send Successfully.")

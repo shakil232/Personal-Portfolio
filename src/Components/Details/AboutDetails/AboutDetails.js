@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutDetails.css'
-import profile from '../../../images/profile.png'
+import profile from '../../../images/profile2.png'
 import NavBar from '../../Shared/NavBar/NavBar';
 import FooterDifferent from '../../Deffrent/FooterDifferent/FooterDifferent'
 
@@ -13,7 +13,7 @@ const AboutDetails = () => {
                     <div className="row d-flex">
                         {/* leftArea */}
                         <div className="col-md-6 mt-5 ">
-                            <img className="img-fluid profile-img" src={profile} alt="" />
+                            <img className="img-fluid profile-img" src={profile} alt="profile2" />
                             <h4 className="text-white mt-3">
                                 <small className="head-text mr-2 mb-3">I'm</small> 
                                 Mohammad Shakil Ahmed

@@ -13,4 +13,6 @@
     color: green;
     text-decoration: overline;   
 }
-
+.collapsed{
+    color: white;
+}

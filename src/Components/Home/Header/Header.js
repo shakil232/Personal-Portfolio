@@ -57,7 +57,7 @@ const Header = () => {
 
                 {/* ImageArea */}
                 <div className="col-md-4 offset-1  col-sm-12 ">
-                    <img src={profile} alt="profile-img" className="img-fluid max-width: 60%" />
+                    <img src={profile} alt="profile-img" className="img-fluid " />
                 </div>
 
             </div>
