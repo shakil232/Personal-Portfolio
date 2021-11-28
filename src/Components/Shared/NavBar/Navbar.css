@@ -1,5 +1,7 @@
+
 .nav-list{
-    line-height: 50px;
+    line-height: 40px;
+    text-align: center !important;
 }
 .nav-menu{
     font-size: 13px;
@@ -10,9 +12,14 @@
     transition: 2s;
 }
 .nav-menu:hover{
-    color: green;
+    color:rgb(240, 12, 118)!important;
     text-decoration: overline;   
 }
-.collapsed{
-    color: white;
+.color{
+    color: white !important;
+}
+.navbar-toggler
+{
+  background-color: #64FFDA! important;
+  font-size: 10px !important;
 }

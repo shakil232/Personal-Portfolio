@@ -3,8 +3,10 @@ import './Project.css'
 import Route from '../../../images/Reactp.png'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css';
 
 const Project = () => {
 
@@ -120,6 +122,22 @@ const Project = () => {
                     <button type="button" className="work-btn">All Works</button>
                 </Link>
             </div>
+
+
+            {/* Swiper */}
+
+            {/* <Swiper
+                spaceBetween={50}
+                slidesPerView={3}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+            >
+                <SwiperSlide>Slide 1</SwiperSlide>
+                <SwiperSlide>Slide 2</SwiperSlide>
+                <SwiperSlide>Slide 3</SwiperSlide>
+                <SwiperSlide>Slide 4</SwiperSlide>
+            ...
+           </Swiper> */}
         </section>
     );
 };

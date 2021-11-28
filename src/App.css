@@ -1,8 +1,25 @@
+
 .main-background{
   background-color: rgb(23, 22, 51);
   height: 100%;
   
 }
+
+/* COMMON-BTN-AREA */
+.btn-common{
+  height: 32px;
+  width: 90px;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid green;
+  transition: 2s;
+}
+
+
+
+
 
 .App-link {
   color: #61dafb;

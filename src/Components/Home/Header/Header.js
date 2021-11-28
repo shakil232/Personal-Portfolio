@@ -11,21 +11,21 @@ const Header = () => {
 
 
     return (
-        <section className="mt-5 pt-3">
-            <div className="d-flex row ">
-                {/* TextArea */}
-                <div className="col-md-5 offset-1 col-sm-12 mb-5">
+        <section className="container mt-5 pt-5">
+            <main className=" row d-flex flex-column-reverse flex-md-row align-content-center justify-content-around">
 
-                    <div className="header-text">
-                        <small >Hello, I'm</small>
-                        <h3> Mohammad Shakil Ahmed </h3>
+                {/* Profile-Intro */}
+                <div className="col-md-8 col-sm-12 pl-4 ">
+                    <div className="hero-text">
+                        <small className=" " >Hello, I'm</small>
+                        <h3 className="text-white "> Mohammad Shakil Ahmed </h3>
                     </div>
                     <div className="typeWrite">
                         <Typical
                             steps={[
                                 'Front End Developer', 1500,
                                 'React Developer', 1500,
-                                'Programmer', 1500
+                                'Programmer',1500
                             ]}
                             loop={Infinity}
                             wrapper="p"
@@ -33,10 +33,10 @@ const Header = () => {
                     </div>
 
                     <div>
-                        <small className="text-justify header-about text-white"> I am Mohammad Shakil Ahmed. I'm a Junior Front-End Mern Web-Developer. I'm interested in JavaScript-based software technologies. I always try to learn about new features and technologies. I am sincere about my work to achieve my goals anyway.</small>
+                        <p className=" text-justify hero-about text-white pr-5"> I am Mohammad Shakil Ahmed . I am a self-thought programmer . I try to develop the front end of a web application using React.js . I'm interested in JavaScript-based software technologies . I am always ready to learn any technology or language . I am sincere about my work to achieve my goals anyway .  </p>
                     </div>
 
-                    <div className="d-flex  align-content-center mt-4">
+                    <div className="d-flex align-content-center mt-4">
                         <a className="social-icon" target="_blank" href="https://www.linkedin.com/in/mohammad-shakil-ahmed-520aa8202/"><FontAwesomeIcon icon={faLinkedin} /></a>
 
                         <a className="social-icon" target="_blank" href="https://github.com/shakil232"><FontAwesomeIcon icon={faGithub} /></a>
@@ -48,19 +48,19 @@ const Header = () => {
 
                     <div className="mt-4">
                         <Link to="/about">
-                            <button className=" about-btn"> About Me</button>
+                            <button className="btn-common about-btn "> About Me</button>
                         </Link>
-                        <a target="_blank" href="https://drive.google.com/file/d/1myQiS0Xo1pV14dQfvMYHK7nEhrs5Xe0D/view?usp=sharing"><button className="ml-3 resume-btn">Resume</button></a>
+                        <a target="_blank" href="https://docs.google.com/document/d/1UNBDxLCk9MdVdtD3XjQKot2gl2LBz-uBryrdGRheQYM/edit?usp=sharing"><button className="ml-3 btn-common resume-btn shadow-lg">Resume</button></a>
 
                     </div>
                 </div>
 
-                {/* ImageArea */}
-                <div className="col-md-4 offset-1  col-sm-12 ">
+                {/* Profile-Image */}
+                <div className="col-md-4 mb-5 w-75 m-auto">
                     <img src={profile} alt="profile-img" className="img-fluid " />
                 </div>
 
-            </div>
+            </main>
         </section>
     );
 };

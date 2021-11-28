@@ -12,13 +12,13 @@ import Router from '../../../images/reuter.png'
 
 const BlogDetails = () => {
     return (
-        <div className="blog-background container">
+        <section className="blog-background container">
 
             {/* navbar */}
             <NavBar />
 
-            <div className="mb-5 mt-3">
-                <h2 className="page-title text-white mb-5"> My Blogs</h2>
+            <div className="mb-5 mt-2">
+                <h2 className="blog-title text-white mb-5"> My Blogs</h2>
                 <CardDeck>
                     <Card className="border-0 card-border">
                         <Card.Img className="img-fluid" variant="top" src={FireBase} />
@@ -147,7 +147,8 @@ const BlogDetails = () => {
 
             {/* footer */}
             <FooterDifferent />
-        </div>
+
+        </section>
     );
 };
 

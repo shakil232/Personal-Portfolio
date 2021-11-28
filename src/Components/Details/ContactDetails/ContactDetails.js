@@ -21,11 +21,12 @@ const ContactDetails = () => {
             e.target.reset()
     }
     return (
-        <div className="contact-background ">
+        <section className="contact-background ">
             <NavBar />
+
             <div className="container">
-                <div className="pb-5">
-                    <div className="mx-auto rounded mt-5 my-3 p-3 px-4 col-md-6" style={{ backgroundColor: "#172a45" }}>
+                <div className="pb-4">
+                    <div className="mx-auto rounded mt-3 my-3 p-3 px-4 col-md-6" style={{ backgroundColor: "#172a45" }}>
 
                         <h2 className="text-center mb-4 text-white"> Get In Touch</h2>
                         <form onSubmit={sendMail} >
@@ -61,8 +62,9 @@ const ContactDetails = () => {
                 </div>
 
             </div>
+
             <FooterDifferent/>
-        </div>
+        </section>
     );
 };
 

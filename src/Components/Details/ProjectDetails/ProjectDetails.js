@@ -10,11 +10,11 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 const ProjectDetails = () => {
     return (
 
-        <div className="project-background container">
+        <section className="project-background container">
             {/* navbar */}
             <NavBar />
 
-            <div className="mb-4 mt-3">
+            <div className="mb-4 mt-2">
                 <h2 className="page-title text-white mb-5"> My Works</h2>
                 <CardDeck>
                     <Card className="border-0 card-border">
@@ -143,7 +143,8 @@ const ProjectDetails = () => {
 
             {/* footer */}
             <FooterDifferent />
-        </div>
+            
+        </section>
     );
 };
 

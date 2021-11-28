@@ -6,13 +6,14 @@ import FooterDifferent from '../../Deffrent/FooterDifferent/FooterDifferent'
 
 const AboutDetails = () => {
     return (
-        <div className="about-background">
+        <section className="about-background">
             <NavBar/>
+            
             <div className="container">
-                <div className=" pb-5">
+                <div className=" pb-4">
                     <div className="row d-flex">
                         {/* leftArea */}
-                        <div className="col-md-6 mt-5 ">
+                        <div className="col-md-6 mt-3 ">
                             <img className="img-fluid profile-img" src={profile} alt="profile2" />
                             <h4 className="text-white mt-3">
                                 <small className="head-text mr-2 mb-3">I'm</small> 
@@ -25,7 +26,7 @@ const AboutDetails = () => {
                        {/* rightArea */}
                         <div className="col-md-6">
                             <div className="my-5">
-                                <h4 className="page-title mb-4 mt-4 text-white">My Skills Set</h4>
+                                <h4 className="page-title mb-4 mt-3 text-white">My Skills Set</h4>
                                 <div className="technology d-flex">
                                     <span>JavaScript</span>
                                     <span>ES6</span>
@@ -74,7 +75,7 @@ const AboutDetails = () => {
 
             </div>
             <FooterDifferent/>
-        </div>
+        </section>
     );
 };
 

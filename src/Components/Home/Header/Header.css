@@ -1,58 +1,45 @@
 
-.header-text small {
+/* HERO-AREA */
+.hero-text small {
     color: #5EF1CF;
-    font-size: 18px;
+    font-size: 16px;
 }
-.header-text h3 {
-    color: white;
-}
-.header-about{
+
+.hero-about{
     font-size: 14px;
 }
+
+
 .resume-btn{ 
-    height: 32px;
-    width: 90px;
     background: rgb(23, 22, 51);
     color: green ;
-    font-size: 14px;
-    font-weight: 500;
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid green;
-    transition: 2s;
 }
 .resume-btn:hover{
     background-color: green;
     color: white;
 }
 .about-btn{ 
-    height: 32px;
-    width: 90px;
     background: green;
     color: white ;
-    font-size: 14px;
-    font-weight: 500;
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid green;
-    transition: 2s;
 }
 .about-btn:hover{
-    background-color: rgb(108, 228, 108);
-    
+    background-color: green;
 }
+
+/* SOCIAL-ICON-AREA */
 .social-icon{
     margin-right: 20px;
     color: #0db8ec ;
     transition:2s;
     cursor: pointer;
+    font-size: 25px;
 }
 .social-icon:hover{
-    color:#d82f97 ;
-    transform: scale(3);
+    color:#f00a98 !important;
+    transform: scale(1.5);
 }
 
-
+/* TYPEwRITE-ANIMATION-AREA */
 .typeWrite{
     color: #5EF1CF;
     font-size: 18px;

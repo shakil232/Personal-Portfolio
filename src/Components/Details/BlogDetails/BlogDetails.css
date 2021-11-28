@@ -1,6 +1,14 @@
+
 .blog-background{
     background-color: rgb(23, 22, 51);
     height: 100%px;
     
   }
- 
+  .blog-title:after {
+    content: "";
+    width: 74px;
+    height: 2px;
+    display: block;
+    margin-top: 7px;
+    background-color: #0acf84;
+}
