@@ -11,7 +11,7 @@ const Header = () => {
 
 
     return (
-        <section className="container mt-5 pt-5">
+        <section className="container mt-5 pt-5 pb-5">
             <main className=" row d-flex flex-column-reverse flex-md-row align-content-center justify-content-around">
 
                 {/* Profile-Intro */}

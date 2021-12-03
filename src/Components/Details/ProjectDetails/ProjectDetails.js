@@ -2,10 +2,12 @@ import React from 'react';
 import './ProjectDetails.css';
 import NavBar from '../../Shared/NavBar/NavBar';
 import FooterDifferent from '../../Deffrent/FooterDifferent/FooterDifferent'
-import { Card, CardDeck } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import REACT from '../../../images/REACT.png';
+import javaScript from '../../../images/javascript-summary.png';
+import Router from '../../../images/Router.png';
 
 const ProjectDetails = () => {
     return (
@@ -14,136 +16,135 @@ const ProjectDetails = () => {
             {/* navbar */}
             <NavBar />
 
-            <div className="mb-4 mt-2">
-                <h2 className="page-title text-white mb-5"> My Works</h2>
-                <CardDeck>
-                    <Card className="border-0 card-border">
-                        <Card.Img variant="top" src="holder.js/100px160" />
-                        <Card.Body className="blog-body">
-                            <Card.Title className=" text-white">Card title</Card.Title>
-                            <Card.Text>
-                                <small className="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum blanditiis reiciendis fugiat. Magnam, ipsum?</small>
-                            </Card.Text>
-                            <div className="d-flex justify-content-between text-white">
-                                <div className="technology">
-                                    <span>FireBase</span>
+            {/* All-project */}
+            <main className="mb-5 mt-2">
+                <h3 className="project-title text-white mb-5"> MY WORKS</h3>
+
+                {/* project-Card-Start */}
+                <div className="row row-cols-1 row-cols-md-3 g-4 px-3">
+
+                    {/* javaScript */}
+                    <div className="col pb-5">
+                        <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white">
+                            <div className="inner">
+                                <img src={javaScript} className="card-img-top img-fluid" alt="javaScript" />
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title">
+                                    Introduction To javaScript
+                                </h5>
+                                <p className="card-text">JavaScript is a single thread, prototype based programming  language that support multiple programming.
+                                </p>
+                                {/* Technology-area */}
+                                <div className="d-flex align-content-center justify-content-between text-white">
+                                    <div className="technology">
+                                        <span>React.js</span>
+                                        <span>Node.js</span>
+                                        <span>Express.js</span>
+                                        <span>MongoDB</span>
+                                        <span>Firebase</span>
+                                        <span>Bootstrap4</span>
+                                    </div>
+                                </div>
+
+                                {/* Links-Area */}
+                                <div className="card-footer  mt-2  d-flex align-content-center justify-content-center">
+                                    <a className="project-icon" target="_blank" href="#">
+                                        <FontAwesomeIcon icon={faGithub} />
+                                    </a>
+
+                                    <a className="project-icon" target="_blank" href="#">
+                                        <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                    </a>
                                 </div>
                             </div>
-                            <div className="mt-4 d-flex">
-                                <a className="project-icon" target="_blank" href="https://github.com/shakil232"><FontAwesomeIcon icon={faGithub} /></a>
-                                <a className="project-icon" target="_blank" href=""><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
-                            </div>
-                        </Card.Body>
+                        </div>
+                    </div>
 
-                    </Card>
-                    <Card className="border-0 card-border">
-                        <Card.Img variant="top" src="holder.js/100px160" />
-                        <Card.Body className="blog-body">
-                            <Card.Title className=" text-white">Card title</Card.Title>
-                            <Card.Text>
-                                <small className="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum blanditiis reiciendis fugiat. Magnam, ipsum?</small>
-                            </Card.Text>
-                            <div className="d-flex justify-content-between text-white">
-                                <div className="technology">
-                                    <span>FireBase</span>
+
+                    {/* REACT */}
+                    <div className="col pb-5">
+                        <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white">
+                            <div className="inner">
+                                <img src={REACT} className="card-img-top img-fluid" alt="javaScript" />
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title">
+                                    Introduction To javaScript
+                                </h5>
+                                <p className="card-text">JavaScript is a single thread, prototype based programming  language that support multiple programming.
+                                </p>
+                                {/* Technology-area */}
+                                <div className="d-flex align-content-center justify-content-between text-white">
+                                    <div className="technology">
+                                        <span>React.js</span>
+                                        <span>Node.js</span>
+                                        <span>Express.js</span>
+                                        <span>MongoDB</span>
+                                        <span>Firebase</span>
+                                        <span>Bootstrap4</span>
+                                    </div>
+                                </div>
+
+                                {/* Links-Area */}
+                                <div className="card-footer  mt-2  d-flex align-content-center justify-content-center">
+                                    <a className="project-icon" target="_blank" href="#">
+                                        <FontAwesomeIcon icon={faGithub} />
+                                    </a>
+
+                                    <a className="project-icon" target="_blank" href="#">
+                                        <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                    </a>
                                 </div>
                             </div>
-                            <div className="mt-4 d-flex">
-                                <a className="project-icon" target="_blank" href="https://github.com/shakil232"><FontAwesomeIcon icon={faGithub} /></a>
-                                <a className="project-icon" target="_blank" href=""><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
-                            </div>
-                        </Card.Body>
+                        </div>
+                    </div>
 
-                    </Card>
-                    <Card className="border-0 card-border">
-                        <Card.Img variant="top" src="holder.js/100px160" />
-                        <Card.Body className="blog-body">
-                            <Card.Title className=" text-white">Card title</Card.Title>
-                            <Card.Text>
-                                <small className="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum blanditiis reiciendis fugiat. Magnam, ipsum?</small>
-                            </Card.Text>
-                            <div className="d-flex justify-content-between text-white">
-                                <div className="technology">
-                                    <span>FireBase</span>
+                    {/* Router */}
+                    <div className="col pb-5">
+                        <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white">
+                            <div className="inner">
+                                <img src={Router} className="card-img-top img-fluid" alt="javaScript" />
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title">
+                                    Introduction To javaScript
+                                </h5>
+                                <p className="card-text">JavaScript is a single thread, prototype based programming  language that support multiple programming.
+                                </p>
+                                {/* Technology-area */}
+                                <div className="d-flex align-content-center justify-content-between text-white">
+                                    <div className="technology">
+                                        <span>React.js</span>
+                                        <span>Node.js</span>
+                                        <span>Express.js</span>
+                                        <span>MongoDB</span>
+                                        <span>Firebase</span>
+                                        <span>Bootstrap4</span>
+                                    </div>
+                                </div>
+
+                                {/* Links-Area */}
+                                <div className="card-footer  mt-2  d-flex align-content-center justify-content-center">
+                                    <a className="project-icon" target="_blank" href="#">
+                                        <FontAwesomeIcon icon={faGithub} />
+                                    </a>
+
+                                    <a className="project-icon" target="_blank" href="#">
+                                        <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                    </a>
                                 </div>
                             </div>
-                            <div className="mt-4 d-flex">
-                                <a className="project-icon" target="_blank" href="https://github.com/shakil232"><FontAwesomeIcon icon={faGithub} /></a>
-                                <a className="project-icon" target="_blank" href=""><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
-                            </div>
-                        </Card.Body>
+                        </div>
+                    </div>
+                </div>
+            </main>
 
-                    </Card>
-                </CardDeck>
-            </div>
-            <div className="mb-4">
-                <CardDeck>
-                    <Card className="border-0 card-border">
-                        <Card.Img variant="top" src="holder.js/100px160" />
-                        <Card.Body className="blog-body">
-                            <Card.Title className=" text-white">Card title</Card.Title>
-                            <Card.Text>
-                                <small className="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum blanditiis reiciendis fugiat. Magnam, ipsum?</small>
-                            </Card.Text>
-                            <div className="d-flex justify-content-between text-white">
-                                <div className="technology">
-                                    <span>FireBase</span>
-                                </div>
-                            </div>
-                            <div className="mt-4 d-flex">
-                                <a className="project-icon" target="_blank" href="https://github.com/shakil232"><FontAwesomeIcon icon={faGithub} /></a>
-                                <a className="project-icon" target="_blank" href=""><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
-                            </div>
-                        </Card.Body>
-
-                    </Card>
-                    <Card className="border-0 card-border">
-                        <Card.Img variant="top" src="holder.js/100px160" />
-                        <Card.Body className="blog-body">
-                            <Card.Title className=" text-white">Card title</Card.Title>
-                            <Card.Text>
-                                <small className="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum blanditiis reiciendis fugiat. Magnam, ipsum?</small>
-                            </Card.Text>
-                            <div className="d-flex justify-content-between text-white">
-                                <div className="technology">
-                                    <span>FireBase</span>
-                                </div>
-                            </div>
-                            <div className="mt-4 d-flex">
-                                <a className="project-icon" target="_blank" href="https://github.com/shakil232"><FontAwesomeIcon icon={faGithub} /></a>
-                                <a className="project-icon" target="_blank" href=""><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
-                            </div>
-                        </Card.Body>
-
-                    </Card>
-                    <Card className="border-0 card-border">
-                        <Card.Img variant="top" src="holder.js/100px160" />
-                        <Card.Body className="blog-body">
-                            <Card.Title className=" text-white">Card title</Card.Title>
-                            <Card.Text>
-                                <small className="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid voluptatum blanditiis reiciendis fugiat. Magnam, ipsum?</small>
-                            </Card.Text>
-                            <div className="d-flex justify-content-between text-white">
-                                <div className="technology">
-                                    <span>FireBase</span>
-                                </div>
-                            </div>
-
-                            <div className="mt-4 d-flex">
-                                <a className="project-icon" target="_blank" href="https://github.com/shakil232"><FontAwesomeIcon icon={faGithub} /></a>
-                                <a className="project-icon" target="_blank" href=""><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
-                            </div>
-
-                        </Card.Body>
-
-                    </Card>
-                </CardDeck>
-            </div>
 
 
             {/* footer */}
             <FooterDifferent />
-            
+
         </section>
     );
 };

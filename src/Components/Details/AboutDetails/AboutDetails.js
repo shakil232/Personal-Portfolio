@@ -7,23 +7,31 @@ import FooterDifferent from '../../Deffrent/FooterDifferent/FooterDifferent'
 const AboutDetails = () => {
     return (
         <section className="about-background">
-            <NavBar/>
-            
+            <NavBar />
+
             <div className="container">
-                <div className=" pb-4">
-                    <div className="row d-flex">
+                
+                    <div className="row d-flex pb-4">
                         {/* leftArea */}
-                        <div className="col-md-6 mt-3 ">
-                            <img className="img-fluid profile-img" src={profile} alt="profile2" />
-                            <h4 className="text-white mt-3">
-                                <small className="head-text mr-2 mb-3">I'm</small> 
+                        <div className="col-md-6 mt-3 px-3">
+
+                            {/* Profile-Image */}
+                            <div className=" w-50 m-auto pb-3">
+                                <img src={profile} alt="profile-img-2" className="img-fluid " />
+                            </div>
+                            
+                            {/* Profile-Details */}
+                            <div>
+                                <h4 className="text-white mt-3">
+                                    <small className="head-text mr-2 mb-3">I'm</small>
                                 Mohammad Shakil Ahmed
                            </h4>
-                            <small className="text-justify header-about text-white"> I am Mohammad Shakil Ahmed. I'm a Junior Front-End Mern Web-Developer. I'm interested in JavaScript-based software technologies. I always try to learn about new features and technologies. I am sincere about my work to achieve my goals anyway.</small>
+                                <small className="text-justify header-about text-white"> I am a self-thought programmer . I try to develop the front end of a web application using React.js . I'm interested in JavaScript-based software technologies . I am always ready to learn any technology or language . I am sincere about my work to achieve my goals anyway . </small>
+                            </div>
 
                         </div>
-                        
-                       {/* rightArea */}
+
+                        {/* rightArea */}
                         <div className="col-md-6">
                             <div className="my-5">
                                 <h4 className="page-title mb-4 mt-3 text-white">My Skills Set</h4>
@@ -37,6 +45,8 @@ const AboutDetails = () => {
                                     <span>Firebase</span>
                                     <span>Bootstrap</span>
                                     <span>MAterial UI</span>
+                                    <span>Tailwind</span>
+                                    <span>SASS</span>
                                     <span>Font Awesome</span>
                                     <span>React Router</span>
                                     <span>React Hok</span>
@@ -44,9 +54,9 @@ const AboutDetails = () => {
                                     <span>HeroKu</span>
                                     <span>React Spring</span>
                                     <span>VS Code</span>
-                                    
+
                                 </div>
-                                
+
                                 <h4 className="page-title mb-4 mt-4 text-white">
                                     I want to work with
                                 </h4>
@@ -56,7 +66,7 @@ const AboutDetails = () => {
                                     <span>Node.js</span>
                                     <span>Express.js</span>
                                     <span>MongoDB</span>
-                                    <span>Firebase</span>  
+                                    <span>Firebase</span>
                                 </div>
 
                                 <h4 className="page-title mt-4 text-white">
@@ -65,16 +75,15 @@ const AboutDetails = () => {
                                 <div className="technology d-flex">
                                     <span>Stripe</span>
                                     <span>SSLCommerz</span>
-                                    <span>Google Map</span>  
+                                    <span>Google Map</span>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                </div>
-
+                
             </div>
-            <FooterDifferent/>
+            <FooterDifferent />
         </section>
     );
 };

@@ -1,36 +1,25 @@
 
-/* BLOG-TITLE-AREA */
-.blog-section::after{
-   content: "";
-   width: 135px;
-   height: 2px;
-   display: block;
-   margin-top: 7px;
-   background-color: #64FFDA;
-}
-.title-text {
-   color: #64FFDA;
-}
 
 /* BLOG-CARD-AREA */
 
 .card-body{
-   background-color: rgb(23, 22, 51) !important;
+   background-color: #172A45 !important;   
 }
 .card-title{
-   font-size: 16px !important;
+   font-size: 14px !important;
 }
 .card-text{
-   font-size: 13px !important;
+   font-size: 11px !important;
 }
 .card-footer{
-   background-color: rgb(23, 21, 63) !important;
+   background-color: #172A45 !important;
 }
+
 
 /* BTN-AREA */
 .blog-btn{ 
    margin-top: 35px;
-   background: rgb(23, 22, 51);
+   background: #0A192F;
    color: #64FFDA;
    border: 2px solid #64FFDA;
 }
@@ -40,31 +29,4 @@
    border: 2px solid green; 
 }
 
-/* Custom-Area */
-.card-hover-custom
-{
-  transition: all 1s ease! important;
-}
-.card-hover-custom:hover
-{
-  text-shadow: none !important;
-  box-sizing: border-box !important;
-  cursor: pointer !important;
-  -webkit-transform: scale(1.1) !important;
-  -ms-transform: scale(1.1)!important;
-  transform: scale(1.1) !important;
-  z-index: 2;
-}
 
-.inner
-{
-  overflow: hidden;
-}
-.inner img
-{
-  transition: all 2.9s ease;
-}
-.inner img:hover
-{
-  transform: scale(1.5); 
-}
