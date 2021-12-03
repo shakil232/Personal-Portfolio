@@ -13,9 +13,9 @@ const Project = () => {
         <section className=" container text-white  mt-5 mb-5 pt-5">
             {/* Project-header-section */}
             <div className="section-header-underline mb-5">
-                <h2>
+                <h3>
                     <span className="text-white"> <span className="title-text">SOME OF </span>MY WORKS</span>
-                </h2>
+                </h3>
             </div>
 
             {/* 1st-Project */}

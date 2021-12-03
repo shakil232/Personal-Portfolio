@@ -10,9 +10,9 @@ const Blog = () => {
         <section className="container  mt-4 pt-4">
             {/* Blog-header-section */}
             <div className="section-header-underline mb-5">
-                <h2>
+                <h3>
                     <span className="text-white"> <span className="title-text">SOME OF </span>MY BLOG</span>
-                </h2>
+                </h3>
             </div>
 
             {/* Blog-card-section */}
