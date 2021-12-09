@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
+
+
+
 const Project = () => {
 
 
@@ -25,6 +28,8 @@ const Project = () => {
                     <div className="project-img">
                         <img src={Route} className="img-fluid" alt="" />
                     </div>
+    
+
                 </div>
 
                 {/* 2nd-card */}

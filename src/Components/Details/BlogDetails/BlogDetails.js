@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './BlogDetails.css';
 import FooterDifferent from '../../Deffrent/FooterDifferent/FooterDifferent';
 import NavBar from '../../Shared/NavBar/NavBar';
@@ -14,9 +14,19 @@ import JavaScriptCore1 from '../../../images/javascript-core-topic-1.jpeg';
 import JavaScriptCore2 from '../../../images/javascript-core-topic-2.png';
 import JavaScriptInterview1 from '../../../images/javascript-interview-question-1.jpeg';
 import JavaScriptInterview2 from '../../../images/javascript-interview-question-2.jpeg';
+// Aos-Document
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const BlogDetails = () => {
+    useEffect(() => {
+        AOS.init({
+            offset: 120, 
+            delay: 3000, 
+        });
+    }, [])
+
     return (
         <section className="blog-background container">
             {/* navbar */}
@@ -31,7 +41,9 @@ const BlogDetails = () => {
                     {/* javaScript */}
                     <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/javascript-summary-a48033ba2ee5" target="_blank">
                         <div className="col pb-5">
-                            <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                            <div className="card border-0  rounded-3 card-hover-custom bg-dark" data-aos="fade-right" 
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                                 <div className="inner">
                                     <img src={Javascript} className="card-img-top img-fluid" alt="Javascript" />
                                 </div>
@@ -57,7 +69,10 @@ const BlogDetails = () => {
                     {/* REACT */}
                     <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/introduction-to-react-js-d39e1b00c443" target="_blank">
                         <div className="col pb-5">
-                            <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                            <div className="card border-0  rounded-3 card-hover-custom bg-dark" 
+                            data-aos="zoom-in-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                                 <div className="inner">
                                     <img src={REACT} className="card-img-top img-fluid" alt="REACT" />
                                 </div>
@@ -83,7 +98,10 @@ const BlogDetails = () => {
                     {/* Router */}
                     <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/getting-started-with-react-router-64d052bbdc17" target="_blank">
                         <div className="col pb-5">
-                            <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                            <div className="card border-0  rounded-3 card-hover-custom bg-dark"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500"
+                             data-aos="fade-left">
                                 <div className="inner">
                                     <img src={Router} className="card-img-top img-fluid" alt="Router" />
                                 </div>
@@ -114,7 +132,10 @@ const BlogDetails = () => {
                     {/* 10-react-interview-questions */}
                     <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/top-10-react-interview-questions-27e570c094ec?source=friends_link&sk=e2c1728d62092d32b5e2b62870561124" target="_blank">
                         <div className="col pb-5">
-                            <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                            <div className="card border-0  rounded-3 card-hover-custom bg-dark"
+                            data-aos="flip-left"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                                 <div className="inner">
                                     <img src={ReactInterview} className="card-img-top img-fluid" alt="ReactInterview" />
                                 </div>
@@ -141,7 +162,11 @@ const BlogDetails = () => {
                     {/* MockInterview */}
                     <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/the-top-10-questions-asked-to-me-in-front-end-mock-interview-c04e9211d98c?source=friends_link&sk=04aeb95716a06444fed3b99301472baa" target="_blank">
                         <div className="col pb-5">
-                            <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                            <div className="card border-0  rounded-3 card-hover-custom bg-dark"
+                            data-aos="flip-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
+                                
                                 <div className="inner">
                                     <img src={MockInterview} className="card-img-top img-fluid" alt="MockInterview" />
                                 </div>
@@ -169,7 +194,10 @@ const BlogDetails = () => {
                     {/* HtmlCssInterview */}
                     <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/top-10-html-css-interview-questions-31824c2e8a25?source=friends_link&sk=556268eacdd1e4b83e98f80ebf7d274b" target="_blank">
                         <div className="col pb-5">
-                            <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                            <div className="card border-0  rounded-3 card-hover-custom bg-dark"
+                            data-aos="flip-right"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                                 <div className="inner">
                                     <img src={HtmlCssInterview} className="card-img-top img-fluid" alt="HtmlCssInterview" />
                                 </div>
@@ -201,7 +229,10 @@ const BlogDetails = () => {
                     {/* JavaScriptInterview1 */}
                     <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/top-10-javascript-interview-question-9cf79f8e4557" target="_blank">
                         <div className="col pb-5">
-                            <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                            <div className="card border-0  rounded-3 card-hover-custom bg-dark"
+                            data-aos="zoom-out-up"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                                 <div className="inner">
                                     <img src={JavaScriptInterview1} className="card-img-top img-fluid" alt="JavaScriptInterview1" />
                                 </div>
@@ -228,7 +259,10 @@ const BlogDetails = () => {
                     {/* JavaScriptInterview2 */}
                     <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/top-10-javascript-interview-questions-part-2-379477654aa6" target="_blank">
                         <div className="col pb-5">
-                            <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                            <div className="card border-0  rounded-3 card-hover-custom bg-dark"
+                            data-aos="zoom-out" 
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                                 <div className="inner">
                                     <img src={JavaScriptInterview2} className="card-img-top img-fluid" alt="JavaScriptInterview2" />
                                 </div>
@@ -255,7 +289,10 @@ const BlogDetails = () => {
                     {/* JavascriptCoding */}
                     <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/common-javascript-interview-coding-challenge-55df1adabc47" target="_blank">
                         <div className="col pb-5">
-                            <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                            <div className="card border-0  rounded-3 card-hover-custom bg-dark"
+                            data-aos="zoom-out-down" 
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                                 <div className="inner">
                                     <img src={JavascriptCoding} className="card-img-top img-fluid" alt="JavascriptCoding" />
                                 </div>
@@ -285,7 +322,10 @@ const BlogDetails = () => {
                     {/* JavaScriptTricks */}
                     <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/10-tricky-things-of-javascript-b4db795aba93" target="_blank">
                         <div className="col pb-5">
-                            <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                            <div className="card border-0  rounded-3 card-hover-custom bg-dark"
+                            data-aos="flip-left" 
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                                 <div className="inner">
                                     <img src={JavaScriptTricks} className="card-img-top img-fluid" alt="JavaScriptTricks" />
                                 </div>
@@ -312,7 +352,10 @@ const BlogDetails = () => {
                     {/* JavaScriptCore1 */}
                     <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/10-javascript-core-topics-that-you-should-know-9091a3b0ad79" target="_blank">
                         <div className="col pb-5">
-                            <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                            <div className="card border-0  rounded-3 card-hover-custom bg-dark"
+                            data-aos="flip-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                                 <div className="inner">
                                     <img src={JavaScriptCore1} className="card-img-top img-fluid" alt="JavaScriptCore1" />
                                 </div>
@@ -339,7 +382,10 @@ const BlogDetails = () => {
                     {/* JavaScriptCore2 */}
                     <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/10-javascript-core-topics-that-you-should-know-part-2-8ff444810c4" target="_blank">
                         <div className="col pb-5">
-                            <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                            <div className="card border-0  rounded-3 card-hover-custom bg-dark"
+                            data-aos="flip-right"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                                 <div className="inner">
                                     <img src={JavaScriptCore2} className="card-img-top img-fluid" alt="JavaScriptCore2" />
                                 </div>

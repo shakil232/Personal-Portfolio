@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ProjectDetails.css';
 import NavBar from '../../Shared/NavBar/NavBar';
 import FooterDifferent from '../../Deffrent/FooterDifferent/FooterDifferent'
@@ -8,8 +8,15 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import REACT from '../../../images/REACT.png';
 import javaScript from '../../../images/javascript-summary.png';
 import Router from '../../../images/Router.png';
+// Aos-Document
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ProjectDetails = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
+
     return (
 
         <section className="project-background container">
@@ -25,7 +32,9 @@ const ProjectDetails = () => {
 
                     {/* javaScript */}
                     <div className="col pb-5">
-                        <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white">
+                        <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white"
+                        data-aos="zoom-in-right"
+                        data-aos-duration="2000">
                             <div className="inner">
                                 <img src={javaScript} className="card-img-top img-fluid" alt="javaScript" />
                             </div>
@@ -64,7 +73,10 @@ const ProjectDetails = () => {
 
                     {/* REACT */}
                     <div className="col pb-5">
-                        <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white">
+                        <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white"
+                       data-aos="flip-left"
+                       data-aos-easing="ease-out-cubic"
+                       data-aos-duration="2000">
                             <div className="inner">
                                 <img src={REACT} className="card-img-top img-fluid" alt="javaScript" />
                             </div>
@@ -102,7 +114,9 @@ const ProjectDetails = () => {
 
                     {/* Router */}
                     <div className="col pb-5">
-                        <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white">
+                        <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white"
+                        data-aos="zoom-in-left"
+                        data-aos-duration="2000" >
                             <div className="inner">
                                 <img src={Router} className="card-img-top img-fluid" alt="javaScript" />
                             </div>

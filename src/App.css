@@ -50,7 +50,7 @@
 /* SECTION-TITLE-AREA */
 .section-header-underline::after{
   content: "";
-  width: 135px;
+  width: 115px;
   height: 2px;
   display: block;
   margin-top: 7px;

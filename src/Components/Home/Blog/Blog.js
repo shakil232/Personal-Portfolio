@@ -1,11 +1,37 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Blog.css';
 import REACT from '../../../images/REACT.png'
 import Router from '../../../images/Router.png'
 import javaScript from '../../../images/javascript-summary.png'
 import { Link } from 'react-router-dom';
+// Aos-Document
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+// swiper
+// import { Swiper, SwiperSlide } from 'swiper/react/swiper-react'
+// import 'swiper/swiper.min.css'
+// import 'swiper/modules/navigation/navigation.min.css'
+// import 'swiper/modules/pagination/pagination.min.css'
+
+// import Swiper core and required modules
+// import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper';
+
+// install Swiper modules
+// SwiperCore.use([Autoplay, Pagination, Navigation,]);
+
+
 
 const Blog = () => {
+    useEffect(() => {
+        AOS.init({
+            offset: 100, 
+            delay: 500, 
+            duration: 1000, 
+            easing: 'ease',
+        });
+    }, [])
+
     return (
         <section className="container  mt-4 pt-4">
             {/* Blog-header-section */}
@@ -21,7 +47,7 @@ const Blog = () => {
                 {/* javaScript */}
                 <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/javascript-summary-a48033ba2ee5" target="_blank">
                     <div className="col pb-4">
-                        <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                        <div className="card border-0  rounded-3 card-hover-custom bg-dark" data-aos="zoom-in-right">
                             <div className="inner">
                                 <img src={javaScript} className="card-img-top img-fluid" alt="Router" />
                             </div>
@@ -47,7 +73,7 @@ const Blog = () => {
                 {/* REACT */}
                 <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/introduction-to-react-js-d39e1b00c443" target="_blank">
                     <div className="col pb-4">
-                        <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                        <div className="card border-0  rounded-3 card-hover-custom bg-dark" data-aos="zoom-in-up">
                             <div className="inner">
                                 <img src={REACT} className="card-img-top img-fluid" alt="Router" />
                             </div>
@@ -73,7 +99,7 @@ const Blog = () => {
                 {/* Router */}
                 <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/getting-started-with-react-router-64d052bbdc17" target="_blank">
                     <div className="col pb-4">
-                        <div className="card border-0  rounded-3 card-hover-custom bg-dark">
+                        <div className="card border-0  rounded-3 card-hover-custom bg-dark" data-aos="zoom-in-left">
                             <div className="inner">
                                 <img src={Router} className="card-img-top img-fluid" alt="Router" />
                             </div>
@@ -95,7 +121,9 @@ const Blog = () => {
                         </div>
                     </div>
                 </a>
+
             </main>
+
 
             {/* AllBlog-btn-section */}
             <div className="action text-center pb-5">
