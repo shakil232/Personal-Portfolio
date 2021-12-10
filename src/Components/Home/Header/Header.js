@@ -7,8 +7,8 @@ import { faLinkedin, faFacebookSquare, faGithub } from '@fortawesome/free-brands
 import Typical from 'react-typical'
 import { Link } from 'react-router-dom';
 
-const Header = () => {
 
+const Header = () => {
 
     return (
         <section className="container mt-5 pt-5 pb-5">

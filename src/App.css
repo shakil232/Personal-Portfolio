@@ -21,7 +21,7 @@
 /* Custom-Area */
 .card-hover-custom
 {
-  transition: all 1s ease! important;
+  transition: all 1.5s ease! important;
 }
 .card-hover-custom:hover
 {
@@ -40,7 +40,7 @@
 }
 .inner img
 {
-  transition: all 2.9s ease;
+  transition: all 3.9s ease;
 }
 .inner img:hover
 {
@@ -72,6 +72,74 @@
 }
 
 
+
+
+ /* swiperJs-Customize 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+
+ Center slide text vertically 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+swiper-navigation 
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(22, 230, 108, 0.3);
+  padding: 25px;
+  border-radius: 6px;
+  font-weight: 600;
+  color: white !important;
+  fill: white !important;
+  stroke: white !important;
+}
+
+.swiper-pagination {
+  
+  bottom: -10px !important;
+  color: solid black;
+  background-color: black;
+  height: 20px;
+  
+}
+
+ Swiper-pagination 
+.swiper-pagination-bullet{
+background-color: darkorange;
+}
+.swiper-pagination-bullet-active {
+    
+  background-color: rgb(255, 0, 43);
+  color: rgb(136, 255, 0);
+} */
 
 
 .App-link {
