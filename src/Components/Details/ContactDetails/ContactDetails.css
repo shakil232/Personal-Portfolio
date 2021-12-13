@@ -1,24 +1,26 @@
-.contact-background{
-    background-color: rgb(23, 22, 51);
-    height: 100%;
-    
-  }
 
-  .submitMail-btn{ 
-    height: 32px;
-    width: 300px;
-    background: orange;
-    color: black ;
-    font-size: 14px;
-    font-weight: 500;
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid orange;
-    transition: 2s;
+/* bg */
+.contact-background{
+  background-color: #0A192F;
+  height: 100%;
+    
+}
+
+/* from-area */
+.submitMail-btn{ 
+  height: 32px;
+  width: 300px;
+  background: orange;
+  color: black ;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid orange;
+  transition: 2s;
 }
 .submitMail-btn:hover{
-    background-color:green ;
-    color: white;
-    border: 2px solid green;
-    
+  background-color:green ;
+  color: white;
+  border: 2px solid green;   
 }

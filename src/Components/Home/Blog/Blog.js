@@ -8,18 +8,6 @@ import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-// swiper
-// import { Swiper, SwiperSlide } from 'swiper/react/swiper-react'
-// import 'swiper/swiper.min.css'
-// import 'swiper/modules/navigation/navigation.min.css'
-// import 'swiper/modules/pagination/pagination.min.css'
-
-// import Swiper core and required modules
-// import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper';
-
-// install Swiper modules
-// SwiperCore.use([Autoplay, Pagination, Navigation,]);
-
 
 
 const Blog = () => {
@@ -128,7 +116,7 @@ const Blog = () => {
             {/* AllBlog-btn-section */}
             <div className="action text-center pb-5">
                 <Link to="/blog">
-                    <button type="button" className="btn-common blog-btn">All Blogs</button>
+                    <button type="button" className="btn-common btn-common-2">All Blogs</button>
                 </Link>
             </div>
         </section>

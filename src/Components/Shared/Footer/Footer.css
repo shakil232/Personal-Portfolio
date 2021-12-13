@@ -1,14 +1,17 @@
+
+/* bg-color-area */
 .footer{
     background-color: #0A192F;
     height: 120px;
 }
-.git-link{
-    color: rgb(13, 194, 67);
-    font-size: 15px;
-    text-decoration: none;
-    transition: 1s;
+/* git-link-area */
+.link-git{
+    transition: ease-in-out 1.5s;
+    font-size: 14px;
+    color: #61dafb;
 }
 
+/* side-social-icon-area */
 .a-social-bar{
     position: fixed;
     top: 50%;

@@ -1,21 +1,25 @@
-.about-background{
-    background-color: rgb(23, 22, 51);
-    height: 100%;
-  }
-  
-  .head-text{
-    color: rgb(17, 218, 233);
-    
-  }
 
-  .page-title:after {
-    content: "";
-    width: 74px;
-    height: 2px;
-    display: block;
-    margin-top: 7px;
-    background-color: #64ffda;
+/* bg-area */
+.about-background{
+  background-color: #0A192F;
+  height: 100%;
 }
+
+/* title */
+.head-text{
+  color: rgb(17, 218, 233); 
+}
+
+.page-title:after {
+  content: "";
+  width: 74px;
+  height: 2px;
+  display: block;
+  margin-top: 7px;
+  background-color: #64ffda;
+}
+
+/* technology-area */
 .technology {
   display: flex;
   flex-wrap: wrap;

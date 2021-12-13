@@ -6,64 +6,60 @@ import FooterDifferent from '../../Deffrent/FooterDifferent/FooterDifferent';
 
 const ContactDetails = () => {
 
-   const sendMail = (e) =>{
+    const sendMail = (e) => {
         e.preventDefault();
 
         emailjs.sendForm('service_th482ch', 'template_7heariy', e.target, "user_tbFNuorI3og0UJCyvUeAH")
             .then((result) => {
-                if(result){
+                if (result) {
                     alert("your Mail Send Successfully.")
                 }
             },
-             (error) => {
-                console.log(error.text);
-            });
-            e.target.reset()
+                (error) => {
+                    console.log(error.text);
+                });
+        e.target.reset()
     }
+    
     return (
         <section className="contact-background ">
+            {/* nav */}
             <NavBar />
 
-            <div className="container">
-                <div className="pb-4">
-                    <div className="mx-auto rounded mt-3 my-3 p-3 px-4 col-md-6" style={{ backgroundColor: "#172a45" }}>
+            <main className="container">
 
-                        <h2 className="text-center mb-4 text-white"> Get In Touch</h2>
-                        <form onSubmit={sendMail} >
+                {/* from */}
+                <div className="mx-auto rounded mt-3 my-3 p-3 px-4 pb-2 col-md-6" style={{ backgroundColor: "#172a45" }}>
+                    <h3 className="text-center mb-4 text-white"> Get In Touch</h3>
 
-                            <div className="form-group">
-                                <input type="text" name="name" placeholder="Your Name" className="form-control" />
-                            </div>
+                    <form onSubmit={sendMail} >
 
-                            <div className="form-group">
-                                <input type="email" name="email" placeholder="Your Email" className="form-control" />
-                            </div>
+                        <div className="form-group">
+                            <input type="text" name="name" placeholder="Your Name" className="form-control" />
+                        </div>
 
-                            <div className="form-group">
-                                <input type="text" name="subject" placeholder="Subject" className="form-control" />
-                            </div>
+                        <div className="form-group">
+                            <input type="email" name="email" placeholder="Your Email" className="form-control" />
+                        </div>
 
-                            <div className="form-group">
-                                <textarea name="message" rows="4" placeholder="Your Message" className="form-control" ></textarea>
-                            </div>
+                        <div className="form-group">
+                            <input type="text" name="subject" placeholder="Subject" className="form-control" />
+                        </div>
 
-                            <div className="text-center form-group com-sm-12">
-                                <input type="submit" className="submitMail-btn" value="Submit" />
-                            </div>
+                        <div className="form-group">
+                            <textarea name="message" rows="3" placeholder="Your Message" className="form-control" ></textarea>
+                        </div>
 
-                            {/* <p className="font-italic text-primary">Sending to
-                                <u>
-                                    <a href="">azharbinsakil@gmail.com</a>
-                                </u>
-                            </p> */}
-                        </form>
-                    </div>
+                        <div className="text-center form-group com-sm-12">
+                            <input type="submit" className="submitMail-btn" value="Submit" />
+                        </div>
 
+                    </form>
                 </div>
+            </main>
 
-            </div>
-
-            <FooterDifferent/>
+            {/* footer */}
+            <FooterDifferent />
         </section>
     );
 };

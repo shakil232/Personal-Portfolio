@@ -1,6 +1,5 @@
 import React from 'react';
 import './Project.css'
-import Route from '../../../images/Reactp.png'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
@@ -270,7 +269,7 @@ const Project = () => {
             {/* All-Project-Btn */}
             <div className="action text-center pb-5">
                 <Link to="/works">
-                    <button type="button" className="work-btn btn-common">All Works</button>
+                    <button type="button" className="btn-common btn-common-2">All Works</button>
                 </Link>
             </div>
 
