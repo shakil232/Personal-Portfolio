@@ -22,9 +22,9 @@ const ProvideService = () => {
         <section className="container mt-4 pt-4">
             {/* ProvideService-section */}
             <div className="section-header-underline mb-5">
-                <h3>
+                <h4>
                     <span className="text-white"> <span className="title-text">THOSE SERVICE </span>I PROVIDE </span>
-                </h3>
+                </h4>
             </div>
 
             {/* Swiper-Slider-Start */}

@@ -26,7 +26,6 @@ const FooterDifferent = () => {
                     <FontAwesomeIcon icon={faCodeBranch} /> Froks
                 </small>
 
-
                 <a className="text-decoration-none " href="https://github.com/shakil232" target="_blank">
                     <small className="text-white ml-3 badge bg-success">  By Me </small>
                 </a>

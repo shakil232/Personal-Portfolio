@@ -8,7 +8,7 @@ const Contact = () => {
             <main className="text-center">
                 <div className="contact-text">
                     <p>What's Next?</p>
-                    <h3 className="text-white">Get In Touch</h3>
+                    <h4 className="text-white">Get In Touch</h4>
                 </div>
 
                 <div >

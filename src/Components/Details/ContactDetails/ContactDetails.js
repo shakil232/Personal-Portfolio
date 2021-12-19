@@ -3,6 +3,10 @@ import './ContactDetails.css';
 import NavBar from '../../Shared/NavBar/NavBar';
 import emailjs from 'emailjs-com';
 import FooterDifferent from '../../Deffrent/FooterDifferent/FooterDifferent';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+toast.configure();
 
 const ContactDetails = () => {
 
@@ -12,15 +16,23 @@ const ContactDetails = () => {
         emailjs.sendForm('service_th482ch', 'template_7heariy', e.target, "user_tbFNuorI3og0UJCyvUeAH")
             .then((result) => {
                 if (result) {
-                    alert("your Mail Send Successfully.")
+                    toast.success("your Mail Send Successfully.", {
+                        position: "top-center",
+                        autoClose: false,
+                        theme:'colored'
+                    })
                 }
             },
                 (error) => {
-                    console.log(error.text);
+                    toast.error(error.text,{
+                        position: "top-center",
+                        autoClose: false,
+                        theme:'colored'  
+                    });
                 });
         e.target.reset()
     }
-    
+
     return (
         <section className="contact-background ">
             {/* nav */}

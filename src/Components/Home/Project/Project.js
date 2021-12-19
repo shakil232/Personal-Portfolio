@@ -5,14 +5,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import PsdToHtml from '../../../images/serviceImg/ps-to-html.jpg'
+// tippy-all-imports
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/animations/scale.css';
 // swiper
 import { Swiper, SwiperSlide } from 'swiper/react/swiper-react'
 import 'swiper/swiper.min.css'
 import 'swiper/modules/navigation/navigation.min.css'
-
 // import Swiper core and required modules
 import SwiperCore, { Autoplay, Navigation } from 'swiper';
-
+import tippy from 'tippy.js';
 // install Swiper modules
 SwiperCore.use([Autoplay, Navigation]);
 
@@ -25,9 +28,9 @@ const Project = () => {
         <section className=" container text-white  mt-5 mb-5 pt-5">
             {/* Project-header-section */}
             <div className="section-header-underline mb-5">
-                <h3>
+                <h4>
                     <span className="text-white"> <span className="title-text">SOME OF </span>MY WORKS</span>
-                </h3>
+                </h4>
             </div>
 
             {/* 1st-Project */}
@@ -40,21 +43,21 @@ const Project = () => {
                         loop={true}
                         centeredSlides={true}
                         autoplay={{
-                            "delay": 3500,                       
+                            "delay": 3500,
                             "disableOnInteraction": false
                         }}
                         breakpoints={{
                             "640": {
                                 "slidesPerView": 1,
-                                
+
                             },
                             "768": {
                                 "slidesPerView": 1,
-                                
+
                             },
                             "1024": {
                                 "slidesPerView": 1,
-                                
+
                             }
                         }} className="mySwiper" >
 
@@ -95,13 +98,27 @@ const Project = () => {
 
                         {/* Link-Area */}
                         <div className="mt-4 pb-2 d-flex">
-                            <a className="project-icon" target="_blank" href="#">
-                                <FontAwesomeIcon icon={faGithub} />
-                            </a>
+                            <Tippy
+                                content={<span className="text-warning">Go Code Repository</span>}
+                                placement="left-start"
+                                animation="scale"
+                                delay={300}
+                            >
+                                <a className="project-icon" target="_blank" href="#">
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                            </Tippy>
 
-                            <a className="project-icon" target="_blank" href="#">
-                                <FontAwesomeIcon icon={faExternalLinkAlt} />
-                            </a>
+                            <Tippy
+                                content={<span className="text-warning ">Go Site Live</span>}
+                                placement="right-start"
+                                animation="scale"
+                                delay={300}
+                            >
+                                <a className="project-icon" target="_blank" href="#">
+                                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                </a>
+                            </Tippy>
                         </div>
                     </div>
                 </div>
@@ -118,21 +135,21 @@ const Project = () => {
                         loop={true}
                         centeredSlides={true}
                         autoplay={{
-                            "delay": 3500,                       
+                            "delay": 3500,
                             "disableOnInteraction": false
                         }}
                         breakpoints={{
                             "640": {
                                 "slidesPerView": 1,
-                                
+
                             },
                             "768": {
                                 "slidesPerView": 1,
-                                
+
                             },
                             "1024": {
                                 "slidesPerView": 1,
-                                
+
                             }
                         }} className="mySwiper" >
 
@@ -173,18 +190,32 @@ const Project = () => {
 
                         {/* Link-Area */}
                         <div className="mt-4 pb-2 d-flex">
-                            <a className="project-icon" target="_blank" href="#">
-                                <FontAwesomeIcon icon={faGithub} />
-                            </a>
+                            <Tippy
+                                content={<span className="text-warning">Go Code Repository</span>}
+                                placement="left-start"
+                                animation="scale"
+                                delay={300}
+                            >
+                                <a className="project-icon" target="_blank" href="#">
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                            </Tippy>
 
-                            <a className="project-icon" target="_blank" href="#">
-                                <FontAwesomeIcon icon={faExternalLinkAlt} />
-                            </a>
+                            <Tippy
+                                content={<span className="text-warning ">Go Site Live</span>}
+                                placement="right-start"
+                                animation="scale"
+                                delay={300}
+                            >
+                                <a className="project-icon" target="_blank" href="#">
+                                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                </a>
+                            </Tippy>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
 
             {/* 3rd-Project */}
             <div className=" row my-4 px-2 project-featured ">
@@ -196,21 +227,21 @@ const Project = () => {
                         loop={true}
                         centeredSlides={true}
                         autoplay={{
-                            "delay": 3500,                       
+                            "delay": 3500,
                             "disableOnInteraction": false
                         }}
                         breakpoints={{
                             "640": {
                                 "slidesPerView": 1,
-                                
+
                             },
                             "768": {
                                 "slidesPerView": 1,
-                                
+
                             },
                             "1024": {
                                 "slidesPerView": 1,
-                                
+
                             }
                         }} className="mySwiper" >
 
@@ -252,19 +283,33 @@ const Project = () => {
 
                         {/* Link-Area */}
                         <div className="mt-4 pb-2 d-flex">
-                            <a className="project-icon" target="_blank" href="#">
-                                <FontAwesomeIcon icon={faGithub} />
-                            </a>
+                            <Tippy
+                                content={<span className="text-warning">Go Code Repository</span>}
+                                placement="left-start"
+                                animation="scale"
+                                delay={300}
+                            >
+                                <a className="project-icon" target="_blank" href="#">
+                                    <FontAwesomeIcon icon={faGithub} />
+                                </a>
+                            </Tippy>
 
-                            <a className="project-icon" target="_blank" href="#">
-                                <FontAwesomeIcon icon={faExternalLinkAlt} />
-                            </a>
+                            <Tippy
+                                content={<span className="text-warning ">Go Site Live</span>}
+                                placement="right-start"
+                                animation="scale"
+                                delay={300}
+                            >
+                                <a className="project-icon" target="_blank" href="#">
+                                    <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                </a>
+                            </Tippy>
                         </div>
                     </div>
                 </div>
             </div>
 
-          
+
 
             {/* All-Project-Btn */}
             <div className="action text-center pb-5">

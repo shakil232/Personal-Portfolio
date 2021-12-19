@@ -8,10 +8,15 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import REACT from '../../../images/REACT.png';
 import javaScript from '../../../images/javascript-summary.png';
 import Router from '../../../images/Router.png';
+// tippy-all-imports
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
+import 'tippy.js/animations/scale.css';
 // Aos-Document
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+// Aos-init
 const ProjectDetails = () => {
     useEffect(() => {
         AOS.init();
@@ -33,8 +38,8 @@ const ProjectDetails = () => {
                     {/* javaScript */}
                     <div className="col pb-5">
                         <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white"
-                        data-aos="zoom-in-right"
-                        data-aos-duration="2000">
+                            data-aos="zoom-in-right"
+                            data-aos-duration="2000">
                             <div className="inner">
                                 <img src={javaScript} className="card-img-top img-fluid" alt="javaScript" />
                             </div>
@@ -57,14 +62,28 @@ const ProjectDetails = () => {
                                 </div>
 
                                 {/* Links-Area */}
-                                <div className="card-footer  mt-2  d-flex align-content-center justify-content-center">
-                                    <a className="project-icon" target="_blank" href="#">
-                                        <FontAwesomeIcon icon={faGithub} />
-                                    </a>
+                                <div className="mt-4 pb-2 d-flex">
+                                    <Tippy
+                                        content={<span className="text-warning">Go Code Repository</span>}
+                                        placement="top-start"
+                                        animation="scale"
+                                        delay={300}
+                                    >
+                                        <a className="project-icon" target="_blank" href="#">
+                                            <FontAwesomeIcon icon={faGithub} />
+                                        </a>
+                                    </Tippy>
 
-                                    <a className="project-icon" target="_blank" href="#">
-                                        <FontAwesomeIcon icon={faExternalLinkAlt} />
-                                    </a>
+                                    <Tippy
+                                        content={<span className="text-warning ">Go Site Live</span>}
+                                        placement="top"
+                                        animation="scale"
+                                        delay={300}
+                                    >
+                                        <a className="project-icon" target="_blank" href="#">
+                                            <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                        </a>
+                                    </Tippy>
                                 </div>
                             </div>
                         </div>
@@ -74,9 +93,9 @@ const ProjectDetails = () => {
                     {/* REACT */}
                     <div className="col pb-5">
                         <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white"
-                       data-aos="flip-left"
-                       data-aos-easing="ease-out-cubic"
-                       data-aos-duration="2000">
+                            data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
                             <div className="inner">
                                 <img src={REACT} className="card-img-top img-fluid" alt="javaScript" />
                             </div>
@@ -99,14 +118,28 @@ const ProjectDetails = () => {
                                 </div>
 
                                 {/* Links-Area */}
-                                <div className="card-footer  mt-2  d-flex align-content-center justify-content-center">
-                                    <a className="project-icon" target="_blank" href="#">
-                                        <FontAwesomeIcon icon={faGithub} />
-                                    </a>
+                                <div className="mt-4 pb-2 d-flex">
+                                    <Tippy
+                                        content={<span className="text-warning">Go Code Repository</span>}
+                                        placement="top-start"
+                                        animation="scale"
+                                        delay={300}
+                                    >
+                                        <a className="project-icon" target="_blank" href="#">
+                                            <FontAwesomeIcon icon={faGithub} />
+                                        </a>
+                                    </Tippy>
 
-                                    <a className="project-icon" target="_blank" href="#">
-                                        <FontAwesomeIcon icon={faExternalLinkAlt} />
-                                    </a>
+                                    <Tippy
+                                        content={<span className="text-warning ">Go Site Live</span>}
+                                        placement="top"
+                                        animation="scale"
+                                        delay={300}
+                                    >
+                                        <a className="project-icon" target="_blank" href="#">
+                                            <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                        </a>
+                                    </Tippy>
                                 </div>
                             </div>
                         </div>
@@ -115,8 +148,8 @@ const ProjectDetails = () => {
                     {/* Router */}
                     <div className="col pb-5">
                         <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white"
-                        data-aos="zoom-in-left"
-                        data-aos-duration="2000" >
+                            data-aos="zoom-in-left"
+                            data-aos-duration="2000" >
                             <div className="inner">
                                 <img src={Router} className="card-img-top img-fluid" alt="javaScript" />
                             </div>
@@ -139,14 +172,28 @@ const ProjectDetails = () => {
                                 </div>
 
                                 {/* Links-Area */}
-                                <div className="card-footer  mt-2  d-flex align-content-center justify-content-center">
-                                    <a className="project-icon" target="_blank" href="#">
-                                        <FontAwesomeIcon icon={faGithub} />
-                                    </a>
+                                <div className="mt-4 pb-2 d-flex">
+                                    <Tippy
+                                        content={<span className="text-warning">Go Code Repository</span>}
+                                        placement="top-start"
+                                        animation="scale"
+                                        delay={300}
+                                    >
+                                        <a className="project-icon" target="_blank" href="#">
+                                            <FontAwesomeIcon icon={faGithub} />
+                                        </a>
+                                    </Tippy>
 
-                                    <a className="project-icon" target="_blank" href="#">
-                                        <FontAwesomeIcon icon={faExternalLinkAlt} />
-                                    </a>
+                                    <Tippy
+                                        content={<span className="text-warning ">Go Site Live</span>}
+                                        placement="top"
+                                        animation="scale"
+                                        delay={300}
+                                    >
+                                        <a className="project-icon" target="_blank" href="#">
+                                            <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                        </a>
+                                    </Tippy>
                                 </div>
                             </div>
                         </div>

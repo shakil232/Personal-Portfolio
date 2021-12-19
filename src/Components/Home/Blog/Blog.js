@@ -24,9 +24,9 @@ const Blog = () => {
         <section className="container  mt-4 pt-4">
             {/* Blog-header-section */}
             <div className="section-header-underline mb-5">
-                <h3>
+                <h4>
                     <span className="text-white"> <span className="title-text">SOME OF </span>MY BLOG</span>
-                </h3>
+                </h4>
             </div>
 
             {/* Blog-card-section */}

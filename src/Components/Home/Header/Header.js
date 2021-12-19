@@ -18,7 +18,7 @@ const Header = () => {
                 <div className="col-md-8 col-sm-12 pl-4 ">
                     <div className="hero-text">
                         <small className=" " >Hello, I'm</small>
-                        <h3 className="text-white "> Mohammad Shakil Ahmed </h3>
+                        <h4 className="text-white "> Mohammad Shakil Ahmed </h4>
                     </div>
                     <div className="typeWrite">
                         <Typical
@@ -33,7 +33,7 @@ const Header = () => {
                     </div>
 
                     <div>
-                        <p className=" text-justify hero-about text-white pr-5"> I am Mohammad Shakil Ahmed . I am a self-thought programmer . I try to develop the front end of a web application using React.js . I'm interested in JavaScript-based software technologies . I am always ready to learn any technology or language . I am sincere about my work to achieve my goals anyway .  </p>
+                        <p className=" text-justify hero-about text-white pr-5"> I am Mohammad Shakil Ahmed. I am a self-thought programmer. I try to develop the front end of a web application using React.js. I'm interested in JavaScript-based software technologies. I am always ready to learn any technology or language. I am sincere about my work to achieve my goals anyway.  </p>
                     </div>
 
                     <div className="d-flex align-content-center mt-4">
