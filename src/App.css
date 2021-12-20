@@ -34,7 +34,7 @@
 /* Custom-Area */
 .card-hover-custom
 {
-  transition: all 1.5s ease! important;
+  transition: all 1.8s ease! important;
 }
 .card-hover-custom:hover
 {
@@ -76,12 +76,12 @@
 /* technology-Span-Style */
 .technology span{
   background: #4b5769;
-  margin-right: 5px;
-  margin-top: 5px;
+  margin-right: 3px;
+  margin-top: 2px;
   border-radius: 3px;
-  padding: 3px 10px;
-  font-size: 13px;
-  height: 26px;
+  padding: 2px 8px;
+  font-size: 11px;
+  height: 22px;
 }
 
 

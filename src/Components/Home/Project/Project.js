@@ -1,10 +1,20 @@
 import React from 'react';
 import './Project.css'
 import { Link } from 'react-router-dom';
+// frontAwesome-all-imports
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import PsdToHtml from '../../../images/serviceImg/ps-to-html.jpg'
+// allProjects-Img
+import Industrial from '../../../images/projects/industrial/industrial.png'
+import IndustrialTwo from '../../../images/projects/industrial/industrial-2.png'
+import IndustrialRes from '../../../images/projects/industrial/Industrial-responsive.PNG'
+import AutoCar from '../../../images/projects/AutoCar/auto-car-hero.png'
+import AutoCarTwo from '../../../images/projects/AutoCar/Auto-Car-2.png'
+import AutoCarRes from '../../../images/projects/AutoCar/auto-responsive.png'
+import FoodHero from '../../../images/projects/FoodRestaurant/food-restaurant-hero.png'
+import FoodTwo from '../../../images/projects/FoodRestaurant/food-restaurant-2.png'
+import FoodRes from '../../../images/projects/FoodRestaurant/foodicted-responsive.png'
 // tippy-all-imports
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
@@ -20,7 +30,6 @@ import tippy from 'tippy.js';
 SwiperCore.use([Autoplay, Navigation]);
 
 
-
 const Project = () => {
 
 
@@ -33,7 +42,7 @@ const Project = () => {
                 </h4>
             </div>
 
-            {/* 1st-Project */}
+            {/* Industrial Construction */}
             <div className=" row my-4 px-2 project-featured ">
                 {/* 1st-card */}
                 <div className="col-md-7" >
@@ -63,17 +72,17 @@ const Project = () => {
 
                         <SwiperSlide>
                             <div>
-                                <img src={PsdToHtml} className="card-img-top img-fluid" alt="PsdToHtml" />
+                                <img src={Industrial} className="card-img-top img-fluid" alt="Industrial" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <img src={PsdToHtml} className="card-img-top img-fluid" alt="PsdToHtml" />
+                                <img src={IndustrialTwo} className="card-img-top img-fluid" alt="IndustrialTwo" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <img src={PsdToHtml} className="card-img-top img-fluid" alt="PsdToHtml" />
+                                <img src={IndustrialRes} className="card-img-top img-fluid" alt="IndustrialRes" />
                             </div>
                         </SwiperSlide>
 
@@ -85,15 +94,13 @@ const Project = () => {
                 <div className="col-md-5">
                     <div className="project-info px-5 py-1 pt-2 rounded ">
                         <p className=" small m-0 pb-2">01</p>
-                        <h4> Red Onion Foods</h4>
-                        <small className="small text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, saepe!</small>
+                        <h4 className="text-warning"> Industrial Construction</h4>
+                        <small className="small text-white">A simple , static and Responsive one page Industrial Construction website design . It is a PSD to HTML conversion .</small>
                         <div className=" technology d-flex flex-wrap mt-3">
-                            <span>React.js</span>
-                            <span>Node.js</span>
-                            <span>Express.js</span>
-                            <span>MongoDB</span>
-                            <span>Firebase</span>
-                            <span>Bootstrap4</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Bootstrap5</span>
+                            <span>JavaScript</span>
                         </div>
 
                         {/* Link-Area */}
@@ -104,7 +111,7 @@ const Project = () => {
                                 animation="scale"
                                 delay={300}
                             >
-                                <a className="project-icon" target="_blank" href="#">
+                                <a className="project-icon" target="_blank" href="https://github.com/shakil232/Industrial-Construction-Landing-Page-">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </Tippy>
@@ -115,7 +122,7 @@ const Project = () => {
                                 animation="scale"
                                 delay={300}
                             >
-                                <a className="project-icon" target="_blank" href="#">
+                                <a className="project-icon" target="_blank" href="https://shakil232.github.io/Industrial-Construction-Landing-Page-/">
                                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                                 </a>
                             </Tippy>
@@ -125,7 +132,7 @@ const Project = () => {
             </div>
 
 
-            {/* 2nd-Project */}
+            {/* Auto Car*/}
             <div className=" row my-4 px-2 project-featured ">
                 {/* 1st-card */}
                 <div className="col-md-7" >
@@ -155,17 +162,17 @@ const Project = () => {
 
                         <SwiperSlide>
                             <div>
-                                <img src={PsdToHtml} className="card-img-top img-fluid" alt="PsdToHtml" />
+                                <img src={AutoCar} className="card-img-top img-fluid" alt="AutoCar" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <img src={PsdToHtml} className="card-img-top img-fluid" alt="PsdToHtml" />
+                                <img src={AutoCarTwo} className="card-img-top img-fluid" alt="AutoCarTwo" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <img src={PsdToHtml} className="card-img-top img-fluid" alt="PsdToHtml" />
+                                <img src={AutoCarRes} className="card-img-top img-fluid" alt="AutoCarRes" />
                             </div>
                         </SwiperSlide>
 
@@ -176,16 +183,13 @@ const Project = () => {
                 {/* 2nd-card */}
                 <div className="col-md-5">
                     <div className="project-info px-5 py-1 pt-2 rounded ">
-                        <p className=" small m-0 pb-2">01</p>
-                        <h4> Red Onion Foods</h4>
-                        <small className="small text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, saepe!</small>
+                        <p className=" small m-0 pb-2">02</p>
+                        <h4 className="text-warning"> Auto Car</h4>
+                        <small className="small text-white">A simple , static and Landing one page Auto Car website design . It is a PSD to HTML conversion .</small>
                         <div className=" technology d-flex flex-wrap mt-3">
-                            <span>React.js</span>
-                            <span>Node.js</span>
-                            <span>Express.js</span>
-                            <span>MongoDB</span>
-                            <span>Firebase</span>
-                            <span>Bootstrap4</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Bootstrap5</span>
                         </div>
 
                         {/* Link-Area */}
@@ -196,7 +200,7 @@ const Project = () => {
                                 animation="scale"
                                 delay={300}
                             >
-                                <a className="project-icon" target="_blank" href="#">
+                                <a className="project-icon" target="_blank" href="https://github.com/shakil232/Auto-Car-Landing-Page">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </Tippy>
@@ -207,7 +211,7 @@ const Project = () => {
                                 animation="scale"
                                 delay={300}
                             >
-                                <a className="project-icon" target="_blank" href="#">
+                                <a className="project-icon" target="_blank" href="https://shakil232.github.io/Auto-Car-Landing-Page/">
                                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                                 </a>
                             </Tippy>
@@ -217,7 +221,7 @@ const Project = () => {
             </div>
 
 
-            {/* 3rd-Project */}
+            {/* Food-Restaurant */}
             <div className=" row my-4 px-2 project-featured ">
                 {/* 1st-card */}
                 <div className="col-md-7" >
@@ -247,17 +251,17 @@ const Project = () => {
 
                         <SwiperSlide>
                             <div>
-                                <img src={PsdToHtml} className="card-img-top img-fluid" alt="PsdToHtml" />
+                                <img src={FoodHero} className="card-img-top img-fluid" alt="FoodHero" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <img src={PsdToHtml} className="card-img-top img-fluid" alt="PsdToHtml" />
+                                <img src={FoodTwo} className="card-img-top img-fluid" alt="FoodTwo" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <img src={PsdToHtml} className="card-img-top img-fluid" alt="PsdToHtml" />
+                                <img src={FoodRes} className="card-img-top img-fluid" alt="FoodRes" />
                             </div>
                         </SwiperSlide>
 
@@ -269,16 +273,14 @@ const Project = () => {
                 {/* 3rd-card */}
                 <div className="col-md-5">
                     <div className="project-info px-5 py-1 pt-2 rounded ">
-                        <p className=" small m-0 pb-2">01</p>
-                        <h4> Red Onion Foods</h4>
-                        <small className="small text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, saepe!</small>
+                        <p className=" small m-0 pb-2">03</p>
+                        <h4 className="text-warning"> Food-Restaurant</h4>
+                        <small className="small text-white">A simple , static and Landing one page Food-Restaurant website design . It is a PSD to HTML conversion .
+                        </small>
                         <div className=" technology d-flex flex-wrap mt-3">
-                            <span>React.js</span>
-                            <span>Node.js</span>
-                            <span>Express.js</span>
-                            <span>MongoDB</span>
-                            <span>Firebase</span>
-                            <span>Bootstrap4</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>Bootstrap5</span>
                         </div>
 
                         {/* Link-Area */}
@@ -289,7 +291,7 @@ const Project = () => {
                                 animation="scale"
                                 delay={300}
                             >
-                                <a className="project-icon" target="_blank" href="#">
+                                <a className="project-icon" target="_blank" href="https://github.com/shakil232/Food-Restaurant-Bootstrap">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </Tippy>
@@ -300,7 +302,7 @@ const Project = () => {
                                 animation="scale"
                                 delay={300}
                             >
-                                <a className="project-icon" target="_blank" href="#">
+                                <a className="project-icon" target="_blank" href="https://shakil232.github.io/Food-Restaurant-Bootstrap/index.html">
                                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                                 </a>
                             </Tippy>

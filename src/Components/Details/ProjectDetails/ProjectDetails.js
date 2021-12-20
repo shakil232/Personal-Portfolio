@@ -2,12 +2,10 @@ import React, { useEffect } from 'react';
 import './ProjectDetails.css';
 import NavBar from '../../Shared/NavBar/NavBar';
 import FooterDifferent from '../../Deffrent/FooterDifferent/FooterDifferent'
+//front-Awesome-all-imports
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import REACT from '../../../images/REACT.png';
-import javaScript from '../../../images/javascript-summary.png';
-import Router from '../../../images/Router.png';
 // tippy-all-imports
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
@@ -15,6 +13,12 @@ import 'tippy.js/animations/scale.css';
 // Aos-Document
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+// project-img-imports
+import Industrial from '../../../images/projects/industrial/industrial.png';
+import FoodRestaurant  from '../../../images/projects/FoodRestaurant/food-restaurant-hero.png';
+import AutoCar from '../../../images/projects/AutoCar/auto-car-hero.png';
+
+
 
 // Aos-init
 const ProjectDetails = () => {
@@ -33,54 +37,52 @@ const ProjectDetails = () => {
                 <h3 className="project-title text-white mb-5"> MY WORKS</h3>
 
                 {/* project-Card-Start */}
-                <div className="row row-cols-1 row-cols-md-3 g-4 px-3">
+                <div className="row row-cols-1 row-cols-md-3 g-4 px-3 ">
 
-                    {/* javaScript */}
+                    {/* Industrial Construction */}
                     <div className="col pb-5">
                         <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white"
                             data-aos="zoom-in-right"
                             data-aos-duration="2000">
                             <div className="inner">
-                                <img src={javaScript} className="card-img-top img-fluid" alt="javaScript" />
+                                <img src={Industrial} className="card-img-top img-fluid" alt="javaScript" />
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">
-                                    Introduction To javaScript
+                                <h5 className="card-title text-warning">
+                                    Industrial Construction
                                 </h5>
-                                <p className="card-text">JavaScript is a single thread, prototype based programming  language that support multiple programming.
+                                <p className="card-text">A simple , static and Responsive one page Industrial Construction website design . It is a PSD to HTML conversion .
                                 </p>
                                 {/* Technology-area */}
                                 <div className="d-flex align-content-center justify-content-between text-white">
                                     <div className="technology">
-                                        <span>React.js</span>
-                                        <span>Node.js</span>
-                                        <span>Express.js</span>
-                                        <span>MongoDB</span>
-                                        <span>Firebase</span>
-                                        <span>Bootstrap4</span>
+                                        <span>HTML5</span>
+                                        <span>CSS3</span>
+                                        <span>Bootstrap5</span>
+                                        <span>JavaScript</span>
                                     </div>
                                 </div>
 
                                 {/* Links-Area */}
-                                <div className="mt-4 pb-2 d-flex">
+                                <div className="mt-3 d-flex">
                                     <Tippy
                                         content={<span className="text-warning">Go Code Repository</span>}
                                         placement="top-start"
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="#">
+                                        <a className="project-icon" target="_blank" href="https://github.com/shakil232/Industrial-Construction-Landing-Page-">
                                             <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                     </Tippy>
 
                                     <Tippy
-                                        content={<span className="text-warning ">Go Site Live</span>}
+                                        content={<span className="text-warning ">Go Live View</span>}
                                         placement="top"
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="#">
+                                        <a className="project-icon" target="_blank" href="https://shakil232.github.io/Industrial-Construction-Landing-Page-/">
                                             <FontAwesomeIcon icon={faExternalLinkAlt} />
                                         </a>
                                     </Tippy>
@@ -90,53 +92,50 @@ const ProjectDetails = () => {
                     </div>
 
 
-                    {/* REACT */}
+                    {/* Auto Car */}
                     <div className="col pb-5">
                         <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white"
                             data-aos="flip-left"
                             data-aos-easing="ease-out-cubic"
                             data-aos-duration="2000">
                             <div className="inner">
-                                <img src={REACT} className="card-img-top img-fluid" alt="javaScript" />
+                                <img src={AutoCar} className="card-img-top img-fluid" alt="javaScript" />
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">
-                                    Introduction To javaScript
+                                <h5 className="card-title text-warning">
+                                    Auto Car
                                 </h5>
-                                <p className="card-text">JavaScript is a single thread, prototype based programming  language that support multiple programming.
+                                <p className="card-text">A simple , static and Landing one page Auto Car website design . It is a PSD to HTML conversion .
                                 </p>
                                 {/* Technology-area */}
                                 <div className="d-flex align-content-center justify-content-between text-white">
                                     <div className="technology">
-                                        <span>React.js</span>
-                                        <span>Node.js</span>
-                                        <span>Express.js</span>
-                                        <span>MongoDB</span>
-                                        <span>Firebase</span>
-                                        <span>Bootstrap4</span>
+                                        <span>HTML5</span>
+                                        <span>CSS3</span>
+                                        <span>Bootstrap5</span>
                                     </div>
                                 </div>
 
                                 {/* Links-Area */}
-                                <div className="mt-4 pb-2 d-flex">
+                                <div className="mt-3 d-flex">
                                     <Tippy
                                         content={<span className="text-warning">Go Code Repository</span>}
                                         placement="top-start"
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="#">
+                                        <a className="project-icon" target="_blank" href="https://github.com/shakil232/Auto-Car-Landing-Page">
                                             <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                     </Tippy>
 
                                     <Tippy
-                                        content={<span className="text-warning ">Go Site Live</span>}
+                                        content={<span className="text-warning ">Go Live View</span>}
                                         placement="top"
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="#">
+                                        <a className="project-icon" target="_blank" href="https://shakil232.github.io/Auto-Car-Landing-Page/">
                                             <FontAwesomeIcon icon={faExternalLinkAlt} />
                                         </a>
                                     </Tippy>
@@ -145,52 +144,49 @@ const ProjectDetails = () => {
                         </div>
                     </div>
 
-                    {/* Router */}
+                    {/* Food-Restaurant */}
                     <div className="col pb-5">
                         <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white"
                             data-aos="zoom-in-left"
                             data-aos-duration="2000" >
                             <div className="inner">
-                                <img src={Router} className="card-img-top img-fluid" alt="javaScript" />
+                                <img src={FoodRestaurant} className="card-img-top img-fluid" alt="javaScript" />
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">
-                                    Introduction To javaScript
+                                <h5 className="card-title text-warning">
+                                    Food-Restaurant
                                 </h5>
-                                <p className="card-text">JavaScript is a single thread, prototype based programming  language that support multiple programming.
+                                <p className="card-text">A simple , static and Landing one page Food-Restaurant website design . It is a PSD to HTML conversion .
                                 </p>
                                 {/* Technology-area */}
                                 <div className="d-flex align-content-center justify-content-between text-white">
                                     <div className="technology">
-                                        <span>React.js</span>
-                                        <span>Node.js</span>
-                                        <span>Express.js</span>
-                                        <span>MongoDB</span>
-                                        <span>Firebase</span>
-                                        <span>Bootstrap4</span>
+                                        <span>HTML5</span>
+                                        <span>CSS3</span>
+                                        <span>Bootstrap5</span>
                                     </div>
                                 </div>
 
                                 {/* Links-Area */}
-                                <div className="mt-4 pb-2 d-flex">
+                                <div className="mt-3 d-flex">
                                     <Tippy
                                         content={<span className="text-warning">Go Code Repository</span>}
                                         placement="top-start"
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="#">
+                                        <a className="project-icon" target="_blank" href="https://github.com/shakil232/Food-Restaurant-Bootstrap">
                                             <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                     </Tippy>
 
                                     <Tippy
-                                        content={<span className="text-warning ">Go Site Live</span>}
+                                        content={<span className="text-warning ">Go Live View</span>}
                                         placement="top"
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="#">
+                                        <a className="project-icon" target="_blank" href="https://shakil232.github.io/Food-Restaurant-Bootstrap/index.html">
                                             <FontAwesomeIcon icon={faExternalLinkAlt} />
                                         </a>
                                     </Tippy>
