@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faStar, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faFacebookSquare, faGithub, } from '@fortawesome/free-brands-svg-icons'
 
+
+
 const Footer = () => {
     return (
         <section className=" container mt-5 pt-5">
@@ -11,7 +13,7 @@ const Footer = () => {
                 <small className="text-white "> Designed & Built by
                     <a className="link-git mx-1 text-decoration-none" target="_blank" href="https://github.com/   shakil232">
                         Mohammad Shakil Ahmed
-                    </a> 
+                    </a>
                 </small>
 
                 {/* footer-text-area */}
