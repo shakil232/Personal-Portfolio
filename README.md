@@ -3,7 +3,7 @@
 
 #### ``` About The Project ```
 
-```This is a Fully React Application. Any one need my Resume can be easily downloaded from here. people can go one components to another components easily & see my works and articles and connect with me to send a mail.```
+```This is a Fully React Application. Anyone who needs my Resume can be easily downloaded from here. people can go from one component to another components easily & see my works and articles and connect with me to send a mail.```
 
 #### ``` The packages that have been used ```
 - Using Css Popular Frame-Work Bootstrap 5 .
@@ -11,7 +11,7 @@
 - html5 & css3 uses .
 - react-typical.js .
 - react-tippy.js .
-- react swiper js .
+- react swiper.js .
 - react aos .
 - react email.js.
 - react-toastify .
@@ -19,15 +19,6 @@
 
 
 ### _Web-Site Live Link_
-[click here](https://shakil232.github.io/Food-Restaurant-Bootstrap/index.html)
-
-### _All Device Responsive image_
-
-![Landing Page](images/markDwon/foodicted-responsive.png)
-
----
-### _webPage OverView Full-Screenshot image_
-
-![Landing Page](images/markDwon/foodicted-full-screenshot.png)
+[click here](https://personal-portfolio-67ed7.web.app/)
 
 ---

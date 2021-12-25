@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import './Blog.css';
-import REACT from '../../../images/REACT.png'
-import Router from '../../../images/Router.png'
-import javaScript from '../../../images/javascript-summary.png'
+import REACT from '../../../images/Articles/REACT.png'
+import Router from '../../../images/Articles/Router.png'
+import javaScript from '../../../images/Articles/javascript-summary.png'
 import { Link } from 'react-router-dom';
 // Aos-Document
 import AOS from 'aos';

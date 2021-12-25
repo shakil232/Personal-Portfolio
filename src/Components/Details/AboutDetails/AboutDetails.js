@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutDetails.css'
-import profile from '../../../images/profile2.png'
+import profile from '../../../images/profile/profile-2.png'
 import NavBar from '../../Shared/NavBar/NavBar';
 import FooterDifferent from '../../Deffrent/FooterDifferent/FooterDifferent'
 
@@ -26,7 +26,7 @@ const AboutDetails = () => {
                                 <small className="head-text mr-2 mb-3">I'm</small>
                                 Mohammad Shakil Ahmed
                            </h4>
-                            <small className="text-justify header-about text-white">I am Mohammad Shakil Ahmed. I am a self-thought programmer. I try to develop the front end of a web application using React.js. I'm interested in JavaScript-based software technologies. I am always ready to learn any technology or language. I am sincere about my work to achieve my goals anyway. </small>
+                            <small className="text-justify header-about text-white"> I am a self-thought programmer. I try to develop the front end of a web application using React.js. I'm interested in JavaScript-based software technologies. I am always ready to learn any technology or language. I am sincere about my work to achieve my goals anyway. </small>
                         </div>
 
                     </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import profile from '../../../images/profile.png';
+import profile from '../../../images/profile/profile-1.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faFacebookSquare, faGithub } from '@fortawesome/free-brands-svg-icons'

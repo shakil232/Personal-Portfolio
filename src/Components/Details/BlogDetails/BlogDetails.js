@@ -2,18 +2,18 @@ import React, { useEffect } from 'react';
 import './BlogDetails.css';
 import FooterDifferent from '../../Deffrent/FooterDifferent/FooterDifferent';
 import NavBar from '../../Shared/NavBar/NavBar';
-import MockInterview from '../../../images/mock-interview.jpeg';
-import HtmlCssInterview from '../../../images/html & css question.jpeg';
-import REACT from '../../../images/REACT.png'
-import ReactInterview from '../../../images/REACTinterview.jpeg';
-import Router from '../../../images/Router.png';
-import Javascript from '../../../images/javascript-summary.png';
-import JavascriptCoding from '../../../images/javascript-coding-interview.jpeg';
-import JavaScriptTricks from '../../../images/javascript-tricks.jpeg';
-import JavaScriptCore1 from '../../../images/javascript-core-topic-1.jpeg';
-import JavaScriptCore2 from '../../../images/javascript-core-topic-2.png';
-import JavaScriptInterview1 from '../../../images/javascript-interview-question-1.jpeg';
-import JavaScriptInterview2 from '../../../images/javascript-interview-question-2.jpeg';
+import MockInterview from '../../../images/Articles/mock-interview.jpeg';
+import HtmlCssInterview from '../../../images/Articles/html & css question.jpeg';
+import REACT from '../../../images/Articles/REACT.png'
+import ReactInterview from '../../../images/Articles/REACTinterview.jpeg';
+import Router from '../../../images/Articles/Router.png';
+import Javascript from '../../../images/Articles/javascript-summary.png';
+import JavascriptCoding from '../../../images/Articles/javascript-coding-interview.jpeg';
+import JavaScriptTricks from '../../../images/Articles/javascript-tricks.jpeg';
+import JavaScriptCore1 from '../../../images/Articles/javascript-core-topic-1.jpeg';
+import JavaScriptCore2 from '../../../images/Articles/javascript-core-topic-2.png';
+import JavaScriptInterview1 from '../../../images/Articles/javascript-interview-question-1.jpeg';
+import JavaScriptInterview2 from '../../../images/Articles/javascript-interview-question-2.jpeg';
 // Aos-Document
 import AOS from 'aos';
 import 'aos/dist/aos.css';
