@@ -1,75 +1,76 @@
-import React from 'react';
-import './ContactDetails.css';
+import React, { useRef } from 'react';
 import NavBar from '../../Shared/NavBar/NavBar';
-import emailjs from 'emailjs-com';
 import FooterDifferent from '../../Deffrent/FooterDifferent/FooterDifferent';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { Button, Col, Container, FloatingLabel, Form, Row } from 'react-bootstrap';
+import swal from 'sweetalert'
+import emailjs from 'emailjs-com'
+import './ContactDetails.css'
 
-toast.configure();
 
 const ContactDetails = () => {
+    const form = useRef();
 
-    const sendMail = (e) => {
+    // email-handler 
+    const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_th482ch', 'template_7heariy', e.target, "user_tbFNuorI3og0UJCyvUeAH")
-            .then((result) => {
-                if (result) {
-                    toast.success("your Mail Send Successfully.", {
-                        position: "top-center",
-                        autoClose: false,
-                        theme:'colored'
-                    })
-                }
+        emailjs.sendForm('service_nhbak95', 'template_8f87f6g', form.current, 'user_tbFNuorI3og0UJCyvUeAH')
+            .then(res => {
+                swal({
+                    title: "Your Message Send Successfully",
+                    text: "Thank You",
+                    icon: "success",
+                    button: "ok",
+                });
+
             },
                 (error) => {
-                    toast.error(error.text,{
-                        position: "top-center",
-                        autoClose: false,
-                        theme:'colored'  
+                    swal({
+                        title: `${error.text}`,
+                        text: "Sorry! Try Again",
+                        icon: "error",
+                        button: "ok",
                     });
                 });
+
         e.target.reset()
-    }
+    };
 
     return (
+
         <section className="contact-background ">
             {/* nav */}
             <NavBar />
+            <Container>
+                <Form style={{ backgroundColor: "#172a45" }} className="mt-3 p-3" ref={form} onSubmit={sendEmail} >
+                    <h4 className="text-center text-white">Get In Touch</h4>
+                    <Row className="g-3 p-3">
+                        <Col className="mx-auto" sm={12} md={6} >
+                            <FloatingLabel className=" mb-2" controlId="floatingInput" label="Your name" >
+                                <Form.Control type="text" name="user_name" placeholder="Your name" required />
+                            </FloatingLabel>
 
-            <main className="container">
+                            <FloatingLabel className=" mb-2" controlId="floatingInput" label="Email address" >
+                                <Form.Control type="email" name="user_email" placeholder="Email address" required />
+                            </FloatingLabel>
 
-                {/* from */}
-                <div className="mx-auto rounded mt-3 my-3 p-3 px-4 pb-2 col-md-6" style={{ backgroundColor: "#172a45" }}>
-                    <h3 className="text-center mb-4 text-white"> Get In Touch</h3>
+                            <FloatingLabel className=" mb-2" controlId="floatingInput" label="Subject" >
+                                <Form.Control type="text" name="subject" placeholder="Subject" required />
+                            </FloatingLabel>
 
-                    <form onSubmit={sendMail} >
+                            <FloatingLabel className="mb-2" controlId="floatingTextarea2" label="Message">
+                                <Form.Control type="text" name="message" as="textarea" placeholder="Message" style={{ height: '100px' }} required />
+                            </FloatingLabel>
 
-                        <div className="form-group">
-                            <input type="text" name="name" placeholder="Your Name" className="form-control" />
-                        </div>
+                            <Button className='form-control my-3 btn-success border-0 rounded-3' type="submit" >
+                                Say Hello
+                            </Button>
+                        </Col>
+                    </Row>
 
-                        <div className="form-group">
-                            <input type="email" name="email" placeholder="Your Email" className="form-control" />
-                        </div>
+                </Form>
 
-                        <div className="form-group">
-                            <input type="text" name="subject" placeholder="Subject" className="form-control" />
-                        </div>
-
-                        <div className="form-group">
-                            <textarea name="message" rows="3" placeholder="Your Message" className="form-control" ></textarea>
-                        </div>
-
-                        <div className="text-center form-group com-sm-12">
-                            <input type="submit" className="submitMail-btn" value="Submit" />
-                        </div>
-
-                    </form>
-                </div>
-            </main>
-
+            </Container>
             {/* footer */}
             <FooterDifferent />
         </section>

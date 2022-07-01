@@ -5,16 +5,6 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-// allProjects-Img
-import Industrial from '../../../images/projects/industrial/industrial.png'
-import IndustrialTwo from '../../../images/projects/industrial/industrial-2.png'
-import IndustrialRes from '../../../images/projects/industrial/Industrial-responsive.PNG'
-import AutoCar from '../../../images/projects/AutoCar/auto-car-hero.png'
-import AutoCarTwo from '../../../images/projects/AutoCar/Auto-Car-2.png'
-import AutoCarRes from '../../../images/projects/AutoCar/auto-responsive.png'
-import FoodHero from '../../../images/projects/FoodRestaurant/food-restaurant-hero.png'
-import FoodTwo from '../../../images/projects/FoodRestaurant/food-restaurant-2.png'
-import FoodRes from '../../../images/projects/FoodRestaurant/foodicted-responsive.png'
 // tippy-all-imports
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
@@ -25,7 +15,6 @@ import 'swiper/swiper.min.css'
 import 'swiper/modules/navigation/navigation.min.css'
 // import Swiper core and required modules
 import SwiperCore, { Autoplay, Navigation } from 'swiper';
-import tippy from 'tippy.js';
 // install Swiper modules
 SwiperCore.use([Autoplay, Navigation]);
 
@@ -72,17 +61,22 @@ const Project = () => {
 
                         <SwiperSlide>
                             <div>
-                                <img src={Industrial} className="card-img-top img-fluid" alt="Industrial" />
+                                <img src="https://i.ibb.co/jzQNLt9/dental-clinic-heo.png" className="card-img-top img-fluid" alt="dentalClinicHero" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <img src={IndustrialTwo} className="card-img-top img-fluid" alt="IndustrialTwo" />
+                                <img src="https://i.ibb.co/Z15PPBP/dental-clinic-log.png" className="card-img-top img-fluid" alt="dentalClinicLog" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <img src={IndustrialRes} className="card-img-top img-fluid" alt="IndustrialRes" />
+                                <img src="https://i.ibb.co/Fhkvd4f/moden-dental-2.png" className="card-img-top img-fluid" alt="dentalClinicDash" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div>
+                                <img src="https://i.ibb.co/XpWNFxv/moden-dental-3.png" className="card-img-top img-fluid" alt="dentalClinicDash2" />
                             </div>
                         </SwiperSlide>
 
@@ -94,35 +88,38 @@ const Project = () => {
                 <div className="col-md-5">
                     <div className="project-info px-5 py-1 pt-2 rounded ">
                         <p className=" small m-0 pb-2">01</p>
-                        <h4 className="text-warning"> Industrial Construction</h4>
-                        <small className="small text-white">A simple , static and Responsive one page Industrial Construction website design . It is a PSD to HTML conversion .</small>
+                        <h4 className="text-warning"> Dental Clinic </h4>
+                        <small className="small text-white">A full-stack single-page dental-clinic web app. Login system with firebase and private routes. Users can Appointment and see their Appointment records on the Checkout page. Admin panel, where admin can do CRUD operations.</small>
                         <div className=" technology d-flex flex-wrap mt-3">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
+                            <span>React.js</span>
+                            <span>React Router</span>
+                            <span>Firebase</span>
                             <span>Bootstrap5</span>
-                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>Mongodb</span>
                         </div>
 
                         {/* Link-Area */}
                         <div className="mt-4 pb-2 d-flex">
                             <Tippy
-                                content={<span className="text-warning">Go Code Repository</span>}
+                                content={<span className="text-warning">Github Repository</span>}
                                 placement="left-start"
                                 animation="scale"
                                 delay={300}
                             >
-                                <a className="project-icon" target="_blank" href="https://github.com/shakil232/Industrial-Construction-Landing-Page-">
+                                <a className="project-icon" target="_blank" rel="noreferrer" href="https://github.com/shakil232/Modern-Dental-Clinic-Client">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </Tippy>
 
                             <Tippy
-                                content={<span className="text-warning ">Go Site Live</span>}
+                                content={<span className="text-warning ">Go Live View</span>}
                                 placement="right-start"
                                 animation="scale"
                                 delay={300}
                             >
-                                <a className="project-icon" target="_blank" href="https://shakil232.github.io/Industrial-Construction-Landing-Page-/">
+                                <a className="project-icon" target="_blank" rel="noreferrer" href="https://modern-dental-clinic-mdc23.web.app/">
                                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                                 </a>
                             </Tippy>
@@ -162,17 +159,22 @@ const Project = () => {
 
                         <SwiperSlide>
                             <div>
-                                <img src={AutoCar} className="card-img-top img-fluid" alt="AutoCar" />
+                                <img src="https://i.ibb.co/dDDJt7k/urban-rider.png" className="card-img-top img-fluid" alt="urbanRiderHero" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <img src={AutoCarTwo} className="card-img-top img-fluid" alt="AutoCarTwo" />
+                                <img src="https://i.ibb.co/N2R4zDK/urban-rider-login.png" className="card-img-top img-fluid" alt="urbanRiderLog" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <img src={AutoCarRes} className="card-img-top img-fluid" alt="AutoCarRes" />
+                                <img src="https://i.ibb.co/K6R4BrK/urban-rider-mail.png" className="card-img-top img-fluid" alt="urbanRiderMail" />
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div>
+                                <img src="https://i.ibb.co/4FSxVJc/urban-rider-des.png" className="card-img-top img-fluid" alt="urbanRiderDes" />
                             </div>
                         </SwiperSlide>
 
@@ -184,34 +186,35 @@ const Project = () => {
                 <div className="col-md-5">
                     <div className="project-info px-5 py-1 pt-2 rounded ">
                         <p className=" small m-0 pb-2">02</p>
-                        <h4 className="text-warning"> Auto Car</h4>
-                        <small className="small text-white">A simple , static and Landing one page Auto Car website design . It is a PSD to HTML conversion .</small>
+                        <h4 className="text-warning"> Urban Rider </h4>
+                        <small className="small text-white">A single-page online ride-sharing web app with firebase login system. The website is built with React, Firebase, React-Router, and React-Bootstrap.</small>
                         <div className=" technology d-flex flex-wrap mt-3">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
+                            <span>React.js</span>
+                            <span>React Router</span>
+                            <span>Firebase</span>
                             <span>Bootstrap5</span>
                         </div>
 
                         {/* Link-Area */}
                         <div className="mt-4 pb-2 d-flex">
                             <Tippy
-                                content={<span className="text-warning">Go Code Repository</span>}
+                                content={<span className="text-warning">Github Repository</span>}
                                 placement="left-start"
                                 animation="scale"
                                 delay={300}
                             >
-                                <a className="project-icon" target="_blank" href="https://github.com/shakil232/Auto-Car-Landing-Page">
+                                <a className="project-icon" target="_blank" rel="noreferrer" href="https://github.com/shakil232/Urban-Rider">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </Tippy>
 
                             <Tippy
-                                content={<span className="text-warning ">Go Site Live</span>}
+                                content={<span className="text-warning ">Go Live View </span>}
                                 placement="right-start"
                                 animation="scale"
                                 delay={300}
                             >
-                                <a className="project-icon" target="_blank" href="https://shakil232.github.io/Auto-Car-Landing-Page/">
+                                <a className="project-icon" target="_blank" rel="noreferrer" href="https://urban-rider-ur12.web.app/">
                                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                                 </a>
                             </Tippy>
@@ -251,17 +254,17 @@ const Project = () => {
 
                         <SwiperSlide>
                             <div>
-                                <img src={FoodHero} className="card-img-top img-fluid" alt="FoodHero" />
+                                <img src="https://i.ibb.co/B2JCwds/hungry-monster-hero.png" className="card-img-top img-fluid" alt="hungryMonsterHero" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <img src={FoodTwo} className="card-img-top img-fluid" alt="FoodTwo" />
+                                <img src="https://i.ibb.co/N1DQSLV/hungry-monster-check.png" className="card-img-top img-fluid" alt="hungryMonsterCheck" />
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
                             <div>
-                                <img src={FoodRes} className="card-img-top img-fluid" alt="FoodRes" />
+                                <img src="https://i.ibb.co/DfHC44J/hungry-monster-modal.png" className="card-img-top img-fluid" alt="hungryMonsterMod" />
                             </div>
                         </SwiperSlide>
 
@@ -274,35 +277,37 @@ const Project = () => {
                 <div className="col-md-5">
                     <div className="project-info px-5 py-1 pt-2 rounded ">
                         <p className=" small m-0 pb-2">03</p>
-                        <h4 className="text-warning"> Food-Restaurant</h4>
-                        <small className="small text-white">A simple , static and Landing one page Food-Restaurant website design . It is a PSD to HTML conversion .
+                        <h4 className="text-warning"> Hungry Monster </h4>
+                        <small className="small text-white">
+                        Hungry-Monster is a single-page online food order website. it is a simple react-router application. The website dynamically changes the route with the URL.The website is built with React, React-Router and React-Bootstrap And has been used an API called (The Meal DB).
                         </small>
                         <div className=" technology d-flex flex-wrap mt-3">
-                            <span>HTML5</span>
-                            <span>CSS3</span>
+                            <span>React.js</span>
+                            <span>React Router</span>
+                            <span>TheMealDB Api</span>
                             <span>Bootstrap5</span>
                         </div>
 
                         {/* Link-Area */}
                         <div className="mt-4 pb-2 d-flex">
                             <Tippy
-                                content={<span className="text-warning">Go Code Repository</span>}
+                                content={<span className="text-warning">Github Repository</span>}
                                 placement="left-start"
                                 animation="scale"
                                 delay={300}
                             >
-                                <a className="project-icon" target="_blank" href="https://github.com/shakil232/Food-Restaurant-Bootstrap">
+                                <a className="project-icon" target="_blank" rel="noreferrer" href="https://github.com/shakil232/Hungry-Monster">
                                     <FontAwesomeIcon icon={faGithub} />
                                 </a>
                             </Tippy>
 
                             <Tippy
-                                content={<span className="text-warning ">Go Site Live</span>}
+                                content={<span className="text-warning ">Go Live View </span>}
                                 placement="right-start"
                                 animation="scale"
                                 delay={300}
                             >
-                                <a className="project-icon" target="_blank" href="https://shakil232.github.io/Food-Restaurant-Bootstrap/index.html">
+                                <a className="project-icon" target="_blank" rel="noreferrer" href="https://hungry-monster01.netlify.app/">
                                     <FontAwesomeIcon icon={faExternalLinkAlt} />
                                 </a>
                             </Tippy>

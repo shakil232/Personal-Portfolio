@@ -25,6 +25,7 @@ import PowerGymHouse from '../../../images/projects/All-Project-img/powerGymHous
 
 
 
+
 // Aos-init
 const ProjectDetails = () => {
     useEffect(() => {
@@ -43,7 +44,172 @@ const ProjectDetails = () => {
 
                 {/* project-Card-Start */}
 
-                {/* 1st-3Cards */}
+                {/* 1st-2ndCards */}
+                <div className="row row-cols-1 row-cols-md-3 g-4 px-3 ">
+
+                    {/* Industrial Construction */}
+                    <div className="col pb-5">
+                        <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white"
+                            data-aos="zoom-in-right"
+                            data-aos-duration="2000">
+                            <div className="inner">
+                                <img src="https://i.ibb.co/jzQNLt9/dental-clinic-heo.png" className="card-img-top img-fluid" alt="dental-clinic" />
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title text-warning">
+                                    Dental Clinic
+                                </h5>
+                                <p className="card-text">A full-stack single-page dental-clinic web app. Login system with firebase and private routes. Users can Appointment and see their Appointment records on the Checkout page. Admin panel, where admin can do CRUD operations
+                                </p>
+                                {/* Technology-area */}
+                                <div className="d-flex align-content-center justify-content-between text-white">
+                                    <div className="technology">
+                                        <span>React.js</span>
+                                        <span>React Router</span>
+                                        <span>Firebase</span>
+                                        <span>Bootstrap5</span>
+                                        <span>Node.js</span>
+                                        <span>Express.js</span>
+                                        <span>Mongodb</span>
+                                    </div>
+                                </div>
+
+                                {/* Links-Area */}
+                                <div className="mt-4 pb-2 d-flex">
+                                    <Tippy
+                                        content={<span className="text-warning">Github Repository</span>}
+                                        placement="left-start"
+                                        animation="scale"
+                                        delay={300}
+                                    >
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://github.com/shakil232/Modern-Dental-Clinic-Client">
+                                            <FontAwesomeIcon icon={faGithub} />
+                                        </a>
+                                    </Tippy>
+
+                                    <Tippy
+                                        content={<span className="text-warning ">Go Live View</span>}
+                                        placement="right-start"
+                                        animation="scale"
+                                        delay={300}
+                                    >
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://modern-dental-clinic-mdc23.web.app/">
+                                            <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                        </a>
+                                    </Tippy>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    {/* Auto Car */}
+                    <div className="col pb-5">
+                        <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white"
+                            data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                            data-aos-duration="2000">
+                            <div className="inner">
+                                <img src="https://i.ibb.co/dDDJt7k/urban-rider.png" className="card-img-top img-fluid" alt="Urban-Rider" />
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title text-warning">
+                                    Urban Rider
+                                </h5>
+                                <p className="card-text">A single-page online ride-sharing web app with firebase login system. The website is built with React, Firebase, React-Router, and React-Bootstrap.
+                                </p>
+                                {/* Technology-area */}
+                                <div className="d-flex align-content-center justify-content-between text-white">
+                                    <div className="technology">
+                                        <span>React.js</span>
+                                        <span>React Router</span>
+                                        <span>Firebase</span>
+                                        <span>Bootstrap5</span>
+                                    </div>
+                                </div>
+
+                                {/* Links-Area */}
+                                <div className="mt-4 pb-2 d-flex">
+                                    <Tippy
+                                        content={<span className="text-warning">Github Repository</span>}
+                                        placement="left-start"
+                                        animation="scale"
+                                        delay={300}
+                                    >
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://github.com/shakil232/Urban-Rider">
+                                            <FontAwesomeIcon icon={faGithub} />
+                                        </a>
+                                    </Tippy>
+
+                                    <Tippy
+                                        content={<span className="text-warning ">Go Live View </span>}
+                                        placement="right-start"
+                                        animation="scale"
+                                        delay={300}
+                                    >
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://urban-rider-ur12.web.app/">
+                                            <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                        </a>
+                                    </Tippy>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Food-Restaurant */}
+                    <div className="col pb-5">
+                        <div className="card border-0  rounded-3 card-hover-custom bg-dark text-white"
+                            data-aos="zoom-in-left"
+                            data-aos-duration="2000" >
+                            <div className="inner">
+                                <img src="https://i.ibb.co/B2JCwds/hungry-monster-hero.png" className="card-img-top img-fluid" alt="HungryMonster" />
+                            </div>
+                            <div className="card-body">
+                                <h5 className="card-title text-warning">
+                                    Hungry Monster
+                                </h5>
+                                <p className="card-text">  Hungry-Monster is a single-page online food order website. it is a simple react-router application. The website dynamically changes the route with the URL.The website is built with React, React-Router and React-Bootstrap And has been used an API called (The Meal DB).
+                                </p>
+                                {/* Technology-area */}
+                                <div className="d-flex align-content-center justify-content-between text-white">
+                                    <div className="technology">
+                                        <span>React.js</span>
+                                        <span>React Router</span>
+                                        <span>TheMealDB Api</span>
+                                        <span>Bootstrap5</span>
+                                    </div>
+                                </div>
+
+                                {/* Links-Area */}
+                                <div className="mt-4 pb-2 d-flex">
+                                    <Tippy
+                                        content={<span className="text-warning">Github Repository</span>}
+                                        placement="left-start"
+                                        animation="scale"
+                                        delay={300}
+                                    >
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://github.com/shakil232/Hungry-Monster">
+                                            <FontAwesomeIcon icon={faGithub} />
+                                        </a>
+                                    </Tippy>
+
+                                    <Tippy
+                                        content={<span className="text-warning ">Go Live View </span>}
+                                        placement="right-start"
+                                        animation="scale"
+                                        delay={300}
+                                    >
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://hungry-monster01.netlify.app/">
+                                            <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                        </a>
+                                    </Tippy>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* 2nd-3rdCard  */}
                 <div className="row row-cols-1 row-cols-md-3 g-4 px-3 ">
 
                     {/* Industrial Construction */}
@@ -78,7 +244,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://github.com/shakil232/Industrial-Construction-Landing-Page-">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://github.com/shakil232/Industrial-Construction-Landing-Page-">
                                             <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                     </Tippy>
@@ -89,7 +255,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://shakil232.github.io/Industrial-Construction-Landing-Page-/">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://shakil232.github.io/Industrial-Construction-Landing-Page-/">
                                             <FontAwesomeIcon icon={faExternalLinkAlt} />
                                         </a>
                                     </Tippy>
@@ -131,7 +297,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://github.com/shakil232/Auto-Car-Landing-Page">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://github.com/shakil232/Auto-Car-Landing-Page">
                                             <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                     </Tippy>
@@ -142,7 +308,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://shakil232.github.io/Auto-Car-Landing-Page/">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://shakil232.github.io/Auto-Car-Landing-Page/">
                                             <FontAwesomeIcon icon={faExternalLinkAlt} />
                                         </a>
                                     </Tippy>
@@ -182,7 +348,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://github.com/shakil232/Food-Restaurant-Bootstrap">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://github.com/shakil232/Food-Restaurant-Bootstrap">
                                             <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                     </Tippy>
@@ -193,7 +359,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://shakil232.github.io/Food-Restaurant-Bootstrap/index.html">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://shakil232.github.io/Food-Restaurant-Bootstrap/index.html">
                                             <FontAwesomeIcon icon={faExternalLinkAlt} />
                                         </a>
                                     </Tippy>
@@ -203,7 +369,7 @@ const ProjectDetails = () => {
                     </div>
                 </div>
 
-                {/* 2nd-3Cards */}
+                {/* 3rd-4thCards */}
                 <div className="row row-cols-1 row-cols-md-3 g-4 px-3 ">
 
                     {/* Travel Agency */}
@@ -236,7 +402,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://github.com/shakil232/Travel-Agency-Landing-Page">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://github.com/shakil232/Travel-Agency-Landing-Page">
                                             <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                     </Tippy>
@@ -247,7 +413,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://shakil232.github.io/Travel-Agency-Landing-Page/">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://shakil232.github.io/Travel-Agency-Landing-Page/">
                                             <FontAwesomeIcon icon={faExternalLinkAlt} />
                                         </a>
                                     </Tippy>
@@ -289,7 +455,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://github.com/shakil232/Penguin-Fashion">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://github.com/shakil232/Penguin-Fashion">
                                             <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                     </Tippy>
@@ -300,7 +466,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://shakil232.github.io/Penguin-Fashion/">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://shakil232.github.io/Penguin-Fashion/">
                                             <FontAwesomeIcon icon={faExternalLinkAlt} />
                                         </a>
                                     </Tippy>
@@ -340,7 +506,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://github.com/shakil232/Body-Building-Home-Page">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://github.com/shakil232/Body-Building-Home-Page">
                                             <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                     </Tippy>
@@ -351,7 +517,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://shakil232.github.io/Body-Building-Home-Page/">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://shakil232.github.io/Body-Building-Home-Page/">
                                             <FontAwesomeIcon icon={faExternalLinkAlt} />
                                         </a>
                                     </Tippy>
@@ -362,7 +528,7 @@ const ProjectDetails = () => {
                 </div>
 
 
-                {/* 3rd-3Cards */}
+                {/* 5th-6thCards */}
                 <div className="row row-cols-1 row-cols-md-3 g-4 px-3 ">
 
                     {/* Panda Commerce*/}
@@ -396,7 +562,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://github.com/shakil232/panda-commerce-bootstrap">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://github.com/shakil232/panda-commerce-bootstrap">
                                             <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                     </Tippy>
@@ -407,7 +573,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://shakil232.github.io/panda-commerce-bootstrap/">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://shakil232.github.io/panda-commerce-bootstrap/">
                                             <FontAwesomeIcon icon={faExternalLinkAlt} />
                                         </a>
                                     </Tippy>
@@ -448,7 +614,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://github.com/shakil232/Personal-Website">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://github.com/shakil232/Personal-Website">
                                             <FontAwesomeIcon icon={faGithub} />
                                         </a>
                                     </Tippy>
@@ -459,7 +625,7 @@ const ProjectDetails = () => {
                                         animation="scale"
                                         delay={300}
                                     >
-                                        <a className="project-icon" target="_blank" href="https://shakil232.github.io/Personal-Website/">
+                                        <a className="project-icon" target="_blank" rel="noreferrer" href="https://shakil232.github.io/Personal-Website/">
                                             <FontAwesomeIcon icon={faExternalLinkAlt} />
                                         </a>
                                     </Tippy>
@@ -470,9 +636,6 @@ const ProjectDetails = () => {
                 </div>
 
             </main>
-
-
-
             {/* footer */}
             <FooterDifferent />
 

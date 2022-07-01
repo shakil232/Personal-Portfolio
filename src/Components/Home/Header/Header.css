@@ -2,7 +2,7 @@
 /* HERO-AREA */
 .hero-text small {
     color: #5EF1CF;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .hero-about{
@@ -11,11 +11,11 @@
 }
 
 
-.resume-btn{ 
+.contact-btn{ 
     background: #0A192F;
     color: green ;
 }
-.resume-btn:hover{
+.contact-btn:hover{
     background-color: green;
     color: white;
 }

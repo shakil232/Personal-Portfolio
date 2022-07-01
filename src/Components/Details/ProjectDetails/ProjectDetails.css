@@ -12,3 +12,8 @@
   margin-top: 7px;
   background-color: #0acf84;
 }
+
+  .back-to-top {
+    position: relative;
+    z-index: 2;
+}

@@ -1,25 +1,34 @@
 
-.nav-list{
-    line-height: 40px;
-    text-align: center !important;
-}
-.nav-menu{
-    font-size: 13px;
-    font-weight: 0px;
-    color: white ;
-    cursor: pointer;
-    text-decoration: none;
-    transition: 2s;
-}
-.nav-menu:hover{
-    color:rgb(240, 12, 118)!important;
-    text-decoration: overline;   
-}
-.color{
-    color: white !important;
-}
-.navbar-toggler
+.nav-link
 {
-  background-color: #64FFDA! important;
-  font-size: 10px !important;
+    font-size: 16px !important;
+    color: white!important;
+    font-weight: 600 !important; 
+    transition: 2s
 }
+.nav-link:hover
+{
+    color: rgb(240, 12, 118) !important;
+    transition: ease-in-out 1s;
+}
+
+.navbar-toggler-icon 
+{
+    background-color: rgb(240, 12, 118) ! important;
+    border: none !important;
+    outline: none !important;
+}
+
+.resume-btn{ 
+    background: green;
+    color: white ;
+    padding: 3px;
+    font-size: 16px ;
+    font-weight: 600 ; 
+}
+.resume-btn:hover{
+    background-color: green;
+    color: white 
+    
+}
+

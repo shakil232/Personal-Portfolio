@@ -1,35 +1,38 @@
 import React from 'react';
 import './Navbar.css';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import logo from '../../../images/logo/logo.png'
 
 const NavBar = () => {
     return (
-        <section className="container">
-            <Navbar className="mt-2 nav-list mb-5" expand="sm">
-                <Navbar.Brand href="#home">
-                    <img
+        <Navbar collapseOnSelect expand="lg" variant="dark">
+            <Container>
+                <Navbar.Brand as={Link} to="/" className="">
+                    <Image
+                        width="40"
+                        height="35"
                         src={logo}
-                        width="30"
-                        height="30"
-                        className="d-inline-block align-top"
-                        alt="React Bootstrap logo"
-                    />
+                        alt="logo" />
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" className="mt-2"
-                />
-                <Navbar.Collapse id="basic-navbar-nav" >
-                    <Nav className="ml-auto ms-auto ">
-                        <Link className="mr-5 nav-menu " to="/home" >Home</Link>
-                        <Link className="mr-5 nav-menu" to="/about" >About</Link>
-                        <Link className="mr-5 nav-menu" to="/works" >Works</Link>
-                        <Link className="mr-5 nav-menu" to="/blog" >Blog</Link>
-                        <Link className="mr-5 nav-menu" to="/contact" >Contact</Link>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="ms-auto">
+                        <Nav.Link className="ms-4" as={Link} to="/" active>Home</Nav.Link>
+                        <Nav.Link className="ms-4" as={Link} to="/about" active>About</Nav.Link>
+                        <Nav.Link className="ms-4" as={Link} to="/works" active>Works</Nav.Link>
+                        <Nav.Link className="ms-4" as={Link} to="/blog" active>Blog</Nav.Link>
+                        <Nav.Link className="ms-4" as={Link} to="/contact" active>Contact</Nav.Link>
+                        <a className="ms-4 mt-2 text-decoration-none text-center btn-common resume-btn" target="_blank"
+                            rel="noreferrer"
+                            href="https://docs.google.com/document/d/1UNBDxLCk9MdVdtD3XjQKot2gl2LBz-uBryrdGRheQYM/edit?usp=sharing">
+                            Resume
+                        </a>
                     </Nav>
                 </Navbar.Collapse>
-            </Navbar>
-        </section>
+            </Container>
+        </Navbar>
+
     );
 };
 
