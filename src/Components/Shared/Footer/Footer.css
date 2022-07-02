@@ -11,8 +11,23 @@
     color: #61dafb;
 }
 
+/* SOCIAL-ICON-AREA */
+.footer-icon{
+    margin-right: 23px;
+    color: #f00a98 ;
+    transition:2s;
+    cursor: pointer;
+    font-size: 30px;
+}
+.footer-icon:hover{
+    color: #0db8ec !important;
+    transform: scale(1.5);
+}
+
+
+
 /* side-social-icon-area */
-.a-social-bar{
+/* .a-social-bar{
     position: fixed;
     top: 50%;
     right: 0px;
@@ -37,4 +52,4 @@
 .social-A-icon:hover{
     color:#0db8ec ;
     transform: scale(2);
-}
+} */

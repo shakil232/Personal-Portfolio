@@ -29,9 +29,9 @@
   } 
 
 .small{
-    font-size: 13px !important;
+    font-size: 15px !important;
     font-weight: 400;
-    color:#0adba7;
+    line-height: 10px !important;
 }
 
 /* Icons */

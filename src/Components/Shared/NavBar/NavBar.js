@@ -2,17 +2,17 @@ import React from 'react';
 import './Navbar.css';
 import { Container, Nav, Navbar, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import logo from '../../../images/logo/logo.png'
+
 
 const NavBar = () => {
     return (
-        <Navbar collapseOnSelect expand="lg" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top"  >
             <Container>
                 <Navbar.Brand as={Link} to="/" className="">
                     <Image
                         width="40"
                         height="35"
-                        src={logo}
+                        src="https://i.ibb.co/fX9yd02/logo.png"
                         alt="logo" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

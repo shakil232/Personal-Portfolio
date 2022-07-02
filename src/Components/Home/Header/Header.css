@@ -6,8 +6,8 @@
 }
 
 .hero-about{
-    font-size: 13px;
-    line-height: 20px !important;
+    font-size: 15px;
+    line-height: 27px !important;
 }
 
 
@@ -30,11 +30,11 @@
 
 /* SOCIAL-ICON-AREA */
 .social-icon{
-    margin-right: 20px;
-    color: #0db8ec ;
+    margin-right: 23px;
+    color: #0db8ec;
     transition:2s;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 30px;
 }
 .social-icon:hover{
     color:#f00a98 !important;

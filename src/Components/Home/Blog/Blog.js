@@ -1,12 +1,9 @@
 import React, { useEffect } from 'react';
-import './Blog.css';
-import REACT from '../../../images/Articles/REACT.png'
-import Router from '../../../images/Articles/Router.png'
-import javaScript from '../../../images/Articles/javascript-summary.png'
+import './Blog.css'
 import { Link } from 'react-router-dom';
 // Aos-Document
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+import 'aos/dist/aos.css'
 
 
 
@@ -33,14 +30,14 @@ const Blog = () => {
             <main className="row row-cols-1 row-cols-md-3 g-4 px-3">
 
                 {/* javaScript */}
-                <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/javascript-summary-a48033ba2ee5" target="_blank">
+                <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/javascript-summary-a48033ba2ee5" target="_blank" rel="noreferrer">
                     <div className="col pb-4">
                         <div className="card border-0  rounded-3 card-hover-custom bg-dark" data-aos="zoom-in-right">
                             <div className="inner">
-                                <img src={javaScript} className="card-img-top img-fluid" alt="Router" />
+                                <img src="https://i.ibb.co/NYX913b/javascript-summary.png" className="card-img-top img-fluid" alt="Router" />
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">
+                                <h5 className="card-title text-warning">
                                     Introduction To javaScript
                                 </h5>
                                 <p className="card-text">JavaScript is a single thread, prototype based programming  language that support multiple programming.
@@ -59,14 +56,14 @@ const Blog = () => {
                 </a>
 
                 {/* REACT */}
-                <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/introduction-to-react-js-d39e1b00c443" target="_blank">
+                <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/introduction-to-react-js-d39e1b00c443" target="_blank" rel="noreferrer">
                     <div className="col pb-4">
                         <div className="card border-0  rounded-3 card-hover-custom bg-dark" data-aos="zoom-in-up">
                             <div className="inner">
-                                <img src={REACT} className="card-img-top img-fluid" alt="Router" />
+                                <img src="https://i.ibb.co/q7hbCcP/REACT.png" className="card-img-top img-fluid" alt="Router" />
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">
+                                <h5 className="card-title text-warning">
                                     Introduction To React
                                 </h5>
                                 <p className="card-text">React is a free and open-source front-end JavaScript library for building user interfaces or UI components...
@@ -85,14 +82,14 @@ const Blog = () => {
                 </a>
 
                 {/* Router */}
-                <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/getting-started-with-react-router-64d052bbdc17" target="_blank">
+                <a className="text-decoration-none text-white" href="https://azharbinshakil.medium.com/getting-started-with-react-router-64d052bbdc17" target="_blank" rel="noreferrer">
                     <div className="col pb-4">
                         <div className="card border-0  rounded-3 card-hover-custom bg-dark" data-aos="zoom-in-left">
                             <div className="inner">
-                                <img src={Router} className="card-img-top img-fluid" alt="Router" />
+                                <img src="https://i.ibb.co/RT1M0GW/Router.png" className="card-img-top img-fluid" alt="Router" />
                             </div>
                             <div className="card-body">
-                                <h5 className="card-title">
+                                <h5 className="card-title text-warning">
                                     Introduction React Route
                                 </h5>
                                 <p className="card-text">What you will know from this article : What is React Router, Install and configure React Router, Static Routing..

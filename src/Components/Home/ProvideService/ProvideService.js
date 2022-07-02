@@ -14,7 +14,7 @@ SwiperCore.use([Autoplay, Navigation]);
 const ProvideService = () => {
 
     return (
-        <section className="container mt-4 pt-4">
+        <section className="container mt-3 pt-2">
             {/* ProvideService-section */}
             <div className="section-header-underline mb-5">
                 <h4>
@@ -59,7 +59,7 @@ const ProvideService = () => {
                                 Web Design and Developer
                             </h5>
                             <p className="card-text">
-                                I am an expert in web design. I can add functionality besides designing a webpage. I use HTML, CSS, Bootstrap, Vanilla Js, and React JS for it. You can see some of my works below.
+                                I am an expert in web design. I can add functionality besides designing a webpage. I use HTML, CSS, Bootstrap, Vanilla Js, and React JS for it. You can see some of my works below. 
                             </p>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ const ProvideService = () => {
                         </div>
                         <div className="card-body">
                             <h5 className="card-title text-warning">
-                                Front-end Web-Developer
+                                Front-end Web-Development
                             </h5>
                             <p className="card-text">
                                 I am an expert in Front-end web design and development. I can add functionality besides designing and developing a webpage. I use HTML, CSS, Bootstrap, Vanilla Js, and React JS for it. You can see some of my works below.
@@ -113,7 +113,7 @@ const ProvideService = () => {
                         </div>
                         <div className="card-body">
                             <h5 className="card-title text-warning">
-                                React-Developer
+                                React Web-Development 
                             </h5>
                             <p className="card-text">I am expert in Front-end web-design and development. I can add functionality besides designing and developed a webpage. I use HTML, CSS, Bootstrap, Vanilla Js, React JS for it. You can see some of my works below.
                             </p>

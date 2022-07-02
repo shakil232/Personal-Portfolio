@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -6,16 +6,26 @@ import { faLinkedin, faFacebookSquare, faGithub } from '@fortawesome/free-brands
 import Typical from 'react-typical'
 import { Link } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
+// Aos-Document
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Header = () => {
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
     return (
         <Container className=" mt-5 pt-5 pb-5">
             <Row className="d-flex flex-column-reverse flex-md-row align-content-center justify-content-around">
 
                 {/* Profile-Intro */}
-                <Col md={7} sm={12}  className=" ps-4 ">
+                <Col md={7} sm={12}  className=" ps-4 "
+                data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                >
                     <div className="hero-text">
                         <small className="" >Hello, I'm</small>
                         <h3 className="text-white"> Mohammad Shakil Ahmed </h3>
@@ -35,7 +45,7 @@ const Header = () => {
                     </div>
 
                     <div>
-                        <p className=" text-justify hero-about text-white pe-5"> I am Mohammad Shakil Ahmed. I am a self-thought programmer. I try to develop the front end of a web application using React.js. I'm interested in JavaScript-based software technologies. I am always ready to learn any technology or language. I am sincere about my work to achieve my goals anyway.  </p>
+                        <p className=" text-justify hero-about text-white pe-5 f"> I am a MERN-Stack WEB Developer. I am working with React, Node.js, and MongoDB. I also have experience in developing static websites using HTML5, CSS3, and JavaScript (ES6). I am a quick learner. I believe in hard work and efficiency. That's why I am always ready to accomplish any task by working hard. I am always ready to learn any technology or language. I am sincere about my work to achieve my goals anyway. </p>
                     </div>
 
                     <div className="d-flex align-content-center mt-4">
@@ -59,7 +69,11 @@ const Header = () => {
                 </Col>
 
                 {/* Profile-Image */}
-                <Col md={4} sm={12} className="mb-5 mx-auto ">
+                <Col md={4} sm={12} className="mb-5 mx-auto "
+                data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"
+                >
                     <img src="https://i.ibb.co/kQp2Mgh/profile-1.png" alt="profile-img" className="img-fluid " />
                 </Col>
 

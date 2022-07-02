@@ -1,24 +1,24 @@
-### Project Name>   _Personal Portfolio_
+# **Personal-Portfolio**
+### `Website Link :` [https://personal-portfolio-67ed7.web.app/](https://personal-portfolio-67ed7.web.app/)
 
 
-#### ``` About The Project ```
-
-```This is a Fully React Application. Anyone who needs my Resume can be easily downloaded from here. people can go from one component to another components easily & see my works and articles and connect with me to send a mail.```
-
-#### ``` The packages that have been used ```
-- Using Css Popular Frame-Work Bootstrap 5 .
-- React app .
-- html5 & css3 uses .
-- react-typical.js .
-- react-tippy.js .
-- react swiper.js .
-- react aos .
-- react email.js.
-- react-toastify .
-- deploy in firebase .
+<a  href="https://personal-portfolio-67ed7.web.app/">
+<img  width="100%"  height="100%"  src="./src/images/personal-portfolio-fullscn.png" />
+</a>
 
 
-### _Web-Site Live Link_
-[click here](https://personal-portfolio-67ed7.web.app/)
+### Front-end Technology Used : 
+- **React, React-Router-Dom,**
+- **React-Bootstrap-5**
+- **CSS3**
+- **Fort-Awesome**
+- **Email.js**
+- **React-Toastify**
+- **React-Typical**
+- **Sweetalert**
+- **Swiper.js**
+- **Tippy.js**
+- **Typewriter-effect**
 
----
+
+<hr/>
