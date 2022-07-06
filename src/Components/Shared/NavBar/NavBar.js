@@ -25,7 +25,7 @@ const NavBar = () => {
                         <Nav.Link className="ms-4" as={Link} to="/contact" active>Contact</Nav.Link>
                         <a className="ms-4 mt-2 text-decoration-none text-center btn-common resume-btn" target="_blank"
                             rel="noreferrer"
-                            href="https://docs.google.com/document/d/1UNBDxLCk9MdVdtD3XjQKot2gl2LBz-uBryrdGRheQYM/edit?usp=sharing">
+                            href="https://drive.google.com/file/d/1hyTlZRtQr2lzQ7wL1WGS1xqUycoNuNRD/view?usp=sharing">
                             Resume
                         </a>
                     </Nav>
