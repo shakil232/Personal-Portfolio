@@ -45,7 +45,7 @@ const Header = () => {
                     </div>
 
                     <div>
-                        <p className=" text-justify hero-about text-white pe-5 f"> I am a MERN-Stack WEB Developer. I am working with React, Node.js, and MongoDB. I also have experience in developing static websites using HTML5, CSS3, and JavaScript (ES6). I am a quick learner. I believe in hard work and efficiency. That's why I am always ready to accomplish any task by working hard. I am always ready to learn any technology or language. I am sincere about my work to achieve my goals anyway. </p>
+                        <p className=" text-justify hero-about text-white pe-5 f"> I am a Front-end  Web Developer. I am working with React.js and have basic knowledge of Node.js and MongoDB. I am a quick learner & I am always ready to learn any technology or language. I am sincere about my work to achieve my goals anyway. </p>
                     </div>
 
                     <div className="d-flex align-content-center mt-4">
